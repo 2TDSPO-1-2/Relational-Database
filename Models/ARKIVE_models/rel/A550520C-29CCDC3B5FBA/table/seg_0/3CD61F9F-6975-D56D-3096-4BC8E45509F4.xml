@@ -1,0 +1,239 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CD61F9F-6975-D56D-3096-4BC8E45509F4" name="TB_ARKIVE_ANIMAL">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet cadastrado no sistema. Não exige responsável individual direto, permitindo cadastro por clinica, hospital, ONG, abrigo ou zoológico.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>F851F13F-FE0C-7316-05FF-A0850020762D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ANIMAL" id="0527DF64-726A-FBE5-7F8A-CA0074F9006F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do animal.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>E4511099-75AB-AE66-791F-D499660F82D0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NM_ANIMAL" id="3547697F-7413-D5EA-4346-7D79E35D79B8">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do animal.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>55F29CAE-3B1B-94A8-8AC3-EF71CF7A2A78</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FAE52CA1-1B80-47B7-FA77-42D911A3956C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESPECIE" id="1005559C-3213-A623-438F-0BF5B1112ED5">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especie do animal.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>781C6E85-0048-49EE-EFE2-1E6BED6384B9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDA07AB5-A982-A4C8-D2AB-2DBDE85A7B06" referredColumn="AFEEFD73-7273-2703-70B6-E1636DD78F15"/>
+</associations>
+</Column>
+<Column name="ID_RACA" id="B4E24AD3-ED98-7E1B-351B-60C0029E6E1B">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Raca do animal, quando conhecida.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>4E69E412-0ECC-D1E0-8CEB-96D9F0C9682F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="017A37B8-D251-87AA-9616-5AEA2A9A3277" referredColumn="6F05BCEF-2D3B-74D0-FA77-DD20ED8CB84F"/>
+</associations>
+</Column>
+<Column name="DS_SEXO" id="87F7E9B2-B8B4-1160-BA6F-1BCF7A95FE3E">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sexo do animal: M ou F.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>6F65D66B-0BD4-D4CB-5D9F-0E42D4F36EBA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CASTRADO" id="B025E1B1-D1A2-9732-6C3D-D6F91800B213">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se o animal é castrado: S ou N.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>513E618C-B0D1-FE43-30CB-D7C183F359EA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLINICA" id="11D78A9F-0F53-8989-8885-3CDB586DF985">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica ou instituição que cadastrou o animal, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>456BB603-751F-A49C-C51B-E6FAF73A8441</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="543D92A9-392B-86C8-2C0C-DA8F16D35730" referredColumn="0B807FC4-95AB-59DA-53D2-1F38912AFD66"/>
+</associations>
+</Column>
+<Column name="ST_ATIVO" id="E431174E-5EB7-7A95-C56A-7DFC229A8364">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão logica: S = ativo, N = inativo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>3856C77E-9FC9-E5C2-23BD-74A14A0DD664</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC3EFDF6-0590-02C9-2CCD-911A3F96AE00" name="PK_ARKIVE_ANIMAL">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>418C8AE2-C9DD-DAD8-0712-0BD8E805626A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0527DF64-726A-FBE5-7F8A-CA0074F9006F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0468E20A-1D70-8097-6E62-5D788990538E" name="IX_ARKIVE_ANIMAL_ESPECIE">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>CF8A9587-DB05-C0EC-6E16-DCFDCDB0805C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1005559C-3213-A623-438F-0BF5B1112ED5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B78E13DF-8231-E24E-255A-8EA5824646FA" name="IX_ARKIVE_ANIMAL_RACA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>8E952236-6C13-CC56-E629-FE41A8638D77</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4E24AD3-ED98-7E1B-351B-60C0029E6E1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6A52F18-EBFA-4D3E-B9AB-F595FB229682" name="IX_ARKIVE_ANIMAL_CLINICA_CAD">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>1E090E93-0E04-497E-CD3F-D43C778AF9C5</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11D78A9F-0F53-8989-8885-3CDB586DF985"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A94CAA6F-04A0-1C82-AD38-3165CED1202C" name="FK_ANIMAL_CLINICA_CAD">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11D78A9F-0F53-8989-8885-3CDB586DF985"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47A3E573-6A8C-6E97-8FB0-456B13F80C5E" name="FK_ANIMAL_ESPECIE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1005559C-3213-A623-438F-0BF5B1112ED5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="660E5858-7415-5231-62AC-2BF8FD3DA67A" name="FK_ANIMAL_RACA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4E24AD3-ED98-7E1B-351B-60C0029E6E1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ARKIVE_ANIMAL_ATIVO" directorySegmentName="seg_0" id="0C77C753-4702-B4AC-B862-87812B6BC14F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>43EF6D65-73D7-D2E1-AA9C-C9D2D605042E</importedID>
+<rule><![CDATA[ST_ATIVO IN ('S', 'N')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_ANIMAL_SEXO" directorySegmentName="seg_0" id="C8B9FCE2-B2E6-F91D-527E-CE35419D9FD1">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>2A5E9D4E-6C3F-33C9-B1A4-2711CFA39E62</importedID>
+<rule><![CDATA[DS_SEXO IN ('M', 'F')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_ANIMAL_CASTRADO" directorySegmentName="seg_0" id="09F10ED7-22E1-C6D1-1302-02E2B4CC5184">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>9A303145-04B4-0B1F-032E-A1AE6C8A1E59</importedID>
+<rule><![CDATA[DS_CASTRADO IN ('S', 'N')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ALERTA_EVTPREV" directorySegmentName="seg_0" id="CD1204CC-C553-9FC6-CCAC-355008441061">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>92AE95BE-78A4-74AC-A952-5C15BF151DA4</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>C52F7195-8A90-B077-CFDF-3E461D18717D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CF6541A2-C956-182C-4729-089C9D79F045</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>84AD8C65-0CCD-84CC-72F2-E749D6422C06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

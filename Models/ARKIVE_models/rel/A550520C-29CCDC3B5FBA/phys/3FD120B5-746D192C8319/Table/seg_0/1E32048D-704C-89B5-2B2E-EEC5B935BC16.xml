@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_ARKIVE_RESPONSAVEL_ANIMAL" directorySegmentName="seg_0" id="1E32048D-704C-89B5-2B2E-EEC5B935BC16">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DT_FIM" id="24C17E4C-6AB8-9172-8057-1F2C97498F08">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RESPONSAVEL" id="6FB45810-21B4-ADC0-5FB6-4BFBCDB274AF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ANIMAL" id="73BEC3FE-79FE-B417-FE44-50F62457852C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_ATIVO" id="9CCB4369-5755-29D0-B419-EC2BAFF36F96">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TP_VINCULO" id="C67146B3-E231-004B-F23A-BCADDE593324">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_INICIO" id="CD165B8D-E2D8-E1CE-99C0-A1F67CF4B031">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ST_PRINCIPAL" id="F9C160F7-F264-7CC6-7CD2-AA3F3EA2C2AA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_ANIRESP_ANIMAL" id="74F49C1F-B602-FEF7-F78A-F910ECD20755">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_ANIRESP_RESP" id="C69113A8-56D0-50F1-A22E-8E7CE1F20C1E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ANIRESP_ANIMAL" id="418FB38A-8ED6-D8AD-7F55-E4551B25A813">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ANIRESP_RESP" id="FCDB57FC-BA7F-6AF9-6AA9-F5D9FBF7A940">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ARKIVE_ANIMAL_RESP" id="A11AE6FA-0659-5E60-DE57-0C6AD0C983DA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_ARKIVE_ANIRESP_PRINC" id="0EEC6F7C-F320-883B-1C49-B6E4630DA988">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_ANIRESP_DATAS" id="5C9A0882-E0FC-2496-DD00-8D01EF4A1389">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_ANIRESP_ATIVO" id="8E156CA2-4695-3E33-6C96-F3F9BFFE7F15">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_ANIRESP_VINCULO" id="ED65B20C-EA6C-8F34-7EA2-2EA2FB4DE6EC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8AD1E495-B8FD-99C9-8D6D-C120A16A2FFE" name="TB ARKIVE FEEDBACK NPS">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Feedback de satisfação em escala NPS, relacionado ao app, clinica, consulta, animal ou responsável.]]></commentInRDBMS>
+<generatorID>F89D0FE2-F778-D2DB-E5CA-BBAA38A4AAFB</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID FEEDBACK NPS" id="C7C0623E-26C5-4820-8FBE-036DA16FA8CF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do feedback NPS.]]></commentInRDBMS>
+<generatorID>6993C37F-34CF-92AD-77A5-7D429F232C28</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID RESPONSAVEL" id="84CD8AA2-DA15-EA62-7DEF-6EDBAD38E755">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Responsável que enviou o feedback, quando aplicável.]]></commentInRDBMS>
+<generatorID>EB64D12C-772C-6225-E019-E96E9F572065</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B97D4DF9-DECC-69E0-70F2-59FC5F9DB2EB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ANIMAL" id="AC340E2F-7E9B-B055-442A-B54546D3BDBE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Animal associado ao feedback, quando aplicável.]]></commentInRDBMS>
+<generatorID>FCAFB2CB-3F4F-0C7E-39A5-A117493ADDBB</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3A93F461-7572-D4FC-8545-3E7F036394D8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CLINICA" id="0A0DD74C-E100-E490-A846-D58E4BC881E0">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica associada ao feedback, quando aplicável.]]></commentInRDBMS>
+<generatorID>CFEAC13D-D7BA-2256-1388-E4C8E3417D4F</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A9252D4F-6C32-8204-BB15-EDED2B1FAB3C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CONSULTA" id="65857F98-69AD-124C-668F-B10BDD96F8C4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Consulta associada ao feedback, quando aplicável.]]></commentInRDBMS>
+<generatorID>14C15E3B-3ED5-FBAF-120C-7D78CC454A5D</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>65863399-7958-F6D4-64B1-46F758DF449F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR NOTA" id="DE017341-8B4F-B0D0-69C8-2F72634F46B3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nota NPS de 0 a 10.]]></commentInRDBMS>
+<generatorID>DECAB190-B487-3050-F4D2-4D00824D45E4</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>CD2E41C2-99F0-317B-6AB4-929909DADCEF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS COMENTARIO" id="DDE15098-857D-E691-70D5-E301493BDE18">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Comentário livre opcional.]]></commentInRDBMS>
+<generatorID>517F6BF4-5018-24EF-320A-A76A95A565FF</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT RESPOSTA" id="20F3F6D5-EB06-F614-49F6-C3F588FC6CE8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de envio do feedback.]]></commentInRDBMS>
+<generatorID>F6448BF6-D9C4-6BD5-458D-71348912C197</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID VETERINARIO" id="9D44C683-4562-8741-74AD-EBEF91FF85DF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Veterinário associado ao feedback, quando aplicável.]]></commentInRDBMS>
+<generatorID>D3CCDCAA-85B9-2C27-B225-9C939CDBAEC0</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>17046307-03A7-F75B-DE4E-D506D6D75864</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT FEEDBACK" id="35CD81BE-9189-6CAF-228A-8127E4381789">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de envio do feedback.]]></commentInRDBMS>
+<generatorID>78BF5534-C7A1-4484-3C6D-72D4B5E14114</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C17F1896-6D31-4051-D767-3BE6EA7551C4" name="PK ARKIVE FEEDBACK NPS">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>AFE72D32-7863-64C6-F6D2-78FF63B0E9D6</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7C0623E-26C5-4820-8FBE-036DA16FA8CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_ARKIVE_DIAGNOSTICO" directorySegmentName="seg_0" id="F00320FD-F560-D47C-4E98-6058DDFA3B0E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PC_CONFIANCA" id="217F5720-0A84-2434-0D4F-80019AB1B293">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_DIAGNOSTICO" id="30BBFFB4-614F-BA67-AF63-3C57C190535F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_INSIGHT_IA" id="4ACDD018-8EF3-2063-26BE-EF6373FFE9D1">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_CONFIRMADO" id="4BF31A2B-1B61-ECCC-0552-624F8827427E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TP_SEVERIDADE" id="68B20C23-8585-8818-0505-DE9BAC2E6584">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DOENCA" id="967A63FF-BD9C-39DD-E46E-4CD8969DD2C1">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CONSULTA" id="D4EA3769-A4C0-3351-6176-CEFEBAAF2F92">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_VALIDACAO_VET" id="DD861197-5602-94EA-FF81-3AF6DA365107">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DIAGNOSTICO" id="E01F27E0-3586-C902-22EF-0F5E52BECBEC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_DIAG_CONSULTA" id="5823880D-BDDD-190C-EF68-B994C6B85A0F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_DIAG_DOENCA" id="D49A26D0-BA4F-27DB-B6A8-6FF0CA88506F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DIAG_DOENCA" id="44C9C322-C156-985D-0014-49EBB98AEF30">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DIAG_CONSULTA" id="C5428AF0-5556-7E8A-AA1D-BEAD4DCCE6EA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ARKIVE_DIAGNOSTICO" id="5A4D51C0-CF48-D178-5674-CF0A6DBCA67D">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_ARKIVE_DIAG_CONFIANCA" id="4B8F9F48-DEB0-F7A8-0846-EA7942AE0F8F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_DIAG_CONFIRMADO" id="66BFC23E-6FB1-065B-9E76-A59C629A58FA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_DIAG_VALIDACAO" id="BB709EEC-3FC8-1A8A-80D7-F55CC4E82FBD">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_DIAG_SEVERIDADE" id="D91D1698-B81F-444D-18D0-D8E0527B1086">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

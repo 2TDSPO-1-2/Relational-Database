@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C826D2F-0BD9-E6FA-A46F-51A8BC99371D" name="TB ARKIVE RESPONSAVEL ANIMAL">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento histórico entre animais e responsáveis, permitindo múltiplos responsáveis, principal e substituições ao longo do tempo.]]></commentInRDBMS>
+<generatorID>1E32048D-704C-89B5-2B2E-EEC5B935BC16</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID ANIMAL" id="1AB12B93-5F03-E478-B84A-ADD71B6B0568">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Animal vinculado ao responsável.]]></commentInRDBMS>
+<generatorID>0D0BB40D-5305-8743-2C97-E3E885A50B3B</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<referedAttribute>3A93F461-7572-D4FC-8545-3E7F036394D8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID RESPONSAVEL" id="0E7A8AEC-2D1D-38B3-1E2B-8CAC43652A1F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Responsável vinculado ao animal.]]></commentInRDBMS>
+<generatorID>A9076594-8FB7-624C-9BD7-9288E0D386AB</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<referedAttribute>B97D4DF9-DECC-69E0-70F2-59FC5F9DB2EB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP VINCULO" id="E9158FAA-1BDE-3AFD-2288-F424CC9779BA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de vinculo entre animal e responsável.]]></commentInRDBMS>
+<generatorID>C67146B3-E231-004B-F23A-BCADDE593324</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>24921B5C-C2E9-C9CD-EF39-A0E8083FED1A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT INICIO" id="34699185-8846-E4E3-B47A-9F0E501A4B12">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inicio do vinculo.]]></commentInRDBMS>
+<generatorID>CD165B8D-E2D8-E1CE-99C0-A1F67CF4B031</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT FIM" id="94A5BF5A-C1C8-5237-20E1-F09A5B831D5F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de fim do vinculo, quando encerrado.]]></commentInRDBMS>
+<generatorID>24C17E4C-6AB8-9172-8057-1F2C97498F08</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST PRINCIPAL" id="FD16852E-5A0F-B22E-EDA6-E2041CBB864A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se é o responsável principal: S ou N.]]></commentInRDBMS>
+<generatorID>F9C160F7-F264-7CC6-7CD2-AA3F3EA2C2AA</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST ATIVO" id="F7841315-56BD-03C6-F4C5-64E78BFEC20C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se o vinculo esta ativo: S ou N.]]></commentInRDBMS>
+<generatorID>9CCB4369-5755-29D0-B419-EC2BAFF36F96</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9A1ADF38-6EFC-EDB9-6B45-5BC0ADC4645B" name="PK ARKIVE ANIMAL RESP">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>A11AE6FA-0659-5E60-DE57-0C6AD0C983DA</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1AB12B93-5F03-E478-B84A-ADD71B6B0568</attributeRef>
+<attributeRef>0E7A8AEC-2D1D-38B3-1E2B-8CAC43652A1F</attributeRef>
+<attributeRef>34699185-8846-E4E3-B47A-9F0E501A4B12</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

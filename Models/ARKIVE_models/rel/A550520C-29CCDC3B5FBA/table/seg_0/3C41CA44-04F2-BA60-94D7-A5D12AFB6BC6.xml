@@ -1,0 +1,292 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C41CA44-04F2-BA60-94D7-A5D12AFB6BC6" name="TB_ARKIVE_CONSULTA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro de atendimento veterinário presencial ou remoto.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>3DEB9CA0-423A-461F-EB94-48348F6D4270</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONSULTA" id="0D1B87ED-0265-0348-D563-31F9E1137591">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da consulta.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>19866682-1AB1-7263-6EB5-14E18780ABE0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="DT_HORA" id="566A1B67-A4E2-5F5E-9862-32A4BBB3D066">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da consulta.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>A4A5B720-49FD-2F75-CABF-7FD59BD26126</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_MODALIDADE" id="2CF76DB0-5991-4BF3-C015-8E53341707EE">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Modalidade da consulta: Presencial ou Remota.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>AA1F1EAB-D690-6BE0-DCC3-9B6203709FB6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MOTIVO" id="7278B2F3-C930-2392-3D5F-3A7E80CF60BB">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Motivo principal da consulta.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>539BB897-772D-51C1-0337-BAFE4BE3CCC1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_SINTOMAS" id="E47C5585-D677-C8D3-FF71-C2C9757F498D">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sintomas relatados pelo responsável ou observados pelo veterinário.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>8B4B1611-1590-487C-4F38-154D56B2AD64</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_OBSERVACAO" id="DF8897E6-1471-3549-851C-34929E63B7B7">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Observações clinicas gerais.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>08565643-F3C4-6442-6EDE-261522A4CE5C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KG_PESO" id="AAFCF8D3-EA1D-2800-1B1A-23431DFB192C">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Peso registrado durante a consulta.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>392139B8-9794-52F3-53DF-A31DC6A06F96</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>630CFDF9-3D97-4C92-1AC2-39E62B198014</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TRANSCRICAO" id="A1F029CA-7259-4AE8-6A29-AB8781B7B4BA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Texto bruto de transcrição da consulta, planejado para IA.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>549EA55C-06A3-DD50-845C-881D9E7CB1B0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_STATUS" id="F378C17D-C61C-F4BE-E9B7-5E08F90EB8A3">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status da consulta: AG, EP, AP, FI ou CA.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>82C95A79-0A06-F7B7-C095-FE028896A03E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>37BC852E-1A61-3F32-5B83-B6853223C0B8</domain>
+<defaultValue>&apos;AG&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ANIMAL" id="ED396349-D487-3AC2-B25E-DFADDF99F140">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Animal atendido.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>43016462-980A-091E-4CE9-42C73E66D4E8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50F47F6A-66D9-9100-DB30-F2CE6F9A0F89" referredColumn="0527DF64-726A-FBE5-7F8A-CA0074F9006F"/>
+</associations>
+</Column>
+<Column name="ID_VETERINARIO" id="532DE0AF-B805-D3B9-D97D-7D26B3DD62C7">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Veterinário responsável pela consulta.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>D3707496-1851-D7CE-4215-DB9C40140F2A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60BA775F-B0F5-C150-F48A-87C1D0FA4BE5" referredColumn="6379E6BA-8F1A-A01C-052C-DD17AA7031BC"/>
+</associations>
+</Column>
+<Column name="ID_CLINICA" id="2C939564-C85F-4D36-0004-2D588DBA36B5">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica da consulta; nulo para atendimento autônomo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C5B82BA4-25C1-0519-EA74-7753251A0810</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D458776E-A82A-86D1-C1DC-8751F29A25F5" referredColumn="0B807FC4-95AB-59DA-53D2-1F38912AFD66"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8F35798-1CF4-F7E6-48CC-9E967C80807D" name="PK_ARKIVE_CONSULTA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>2B3BE584-87BC-8310-EE71-FC3E42CCB46E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D1B87ED-0265-0348-D563-31F9E1137591"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="027FA831-F690-0B93-E8EE-7EFF82B2A5AA" name="IX_ARKIVE_CONS_ANIMAL">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>4BBF54EA-7F60-88CD-1057-1D35DF232157</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED396349-D487-3AC2-B25E-DFADDF99F140"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59522C9D-5336-2FE2-F164-47B729B6CF9D" name="IX_ARKIVE_CONS_VET">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>8B6E7044-F088-037A-26C9-303AF60C1B68</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="532DE0AF-B805-D3B9-D97D-7D26B3DD62C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="419FDA03-4020-283B-054C-43B09016FA66" name="IX_ARKIVE_CONS_CLINICA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C3EB4B8F-794B-F216-6EF2-3BBB1D897EED</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C939564-C85F-4D36-0004-2D588DBA36B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53BF76B2-5B04-5197-DDA6-1CB2694C4445" name="FK_CONS_ANIMAL">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED396349-D487-3AC2-B25E-DFADDF99F140"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="208FD30B-A5E8-E824-1D8D-C6ED9ABD3FD1" name="FK_CONS_CLINICA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C939564-C85F-4D36-0004-2D588DBA36B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BBD0BD0-B1F0-273B-CBF0-78E9AA1A6C0A" name="FK_CONS_VET">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="532DE0AF-B805-D3B9-D97D-7D26B3DD62C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ARKIVE_CONS_MODALIDADE" directorySegmentName="seg_0" id="F7C2EFE6-157C-D692-278E-23F9341C75E8">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>515CABFB-0A3F-1C10-90E4-CEFAC1015A7C</importedID>
+<rule><![CDATA[TP_MODALIDADE IN ('PRESENCIAL', 'REMOTA')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_CONS_STATUS" directorySegmentName="seg_0" id="058A799F-4EA0-31CC-05C2-2C5D47AF14CD">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>46A1BFD7-D92B-EC3D-BF5B-CE881C4C9777</importedID>
+<rule><![CDATA[ST_STATUS IN ('AG', 'EP', 'AP', 'FI', 'CA')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_CONS_PESO" directorySegmentName="seg_0" id="3903A758-AE80-792A-B17D-3AC1349A123F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>C7FAB120-1973-542D-9178-E93EEDD32BDC</importedID>
+<rule><![CDATA[KG_PESO IS NULL OR KG_PESO > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

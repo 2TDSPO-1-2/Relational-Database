@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_ARKIVE_AVALIACAO_BEM_ESTAR" directorySegmentName="seg_0" id="413EFA0B-2E4A-B8E3-D73C-ED785E5DC963">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_ANIMAL" id="0E19A15A-C77C-D79B-EA00-4664FEF46622">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_AVALIACAO_BEM_ESTAR" id="2CFEC152-BE5A-56AC-471F-89CFC08B9D3C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="DS_APETITE" id="4089F629-1799-C853-AFF6-1E972FE193B6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RESPONSAVEL" id="47319633-2946-C19D-025D-68FC23CC8A0A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KG_PESO" id="50B8676B-6E30-B06C-CB18-AAC7EE7BF104">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_ATIVIDADE" id="69D4DC38-A643-0FD0-1FDD-359ACF3E6A6C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_VETERINARIO" id="7699F3F0-286C-16B0-A13F-77828B38166E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_OBSERVACAO" id="85C7C305-1A48-31FE-0DE2-4066A100B0DC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_AVALIACAO" id="8C286546-C3CD-4782-EAD1-0BD206B850DC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_CONSULTA" id="A8AB1A13-109E-4406-C3F8-A10CBC0301BA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_COMPORTAMENTO" id="E80D41AB-42C2-D4D9-C4B2-D024582AF307">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_IDADE" id="FAE25394-47B6-BF97-FBC5-BADC51E1E972">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_AVAL_ANIMAL" id="0D9FA97D-AF86-19FC-28F1-FFA5DE751C7F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_AVAL_RESP" id="31E1E812-5A5D-6B26-F46F-0224357A55E2">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_AVAL_CONSULTA" id="F2AF2968-90A2-3A83-0760-39BE618AB222">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_AVAL_VET" id="FACE1DC3-8065-D0F6-5A5A-B6737DE9118E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVAL_CONSULTA" id="4AC73404-9131-9C44-4B81-CCC71E07AAFC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVAL_RESP" id="4FE6EC55-C6DB-DF1A-3B48-C50546760D4F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVAL_ANIMAL" id="A2327C40-1EC7-77F8-1337-CBDE939FA4D1">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVAL_VET" id="E47777FC-F3FD-3986-F377-C22821596BBC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ARKIVE_AVAL_BEM_ESTAR" id="0C84083B-CC23-FEF7-8CF0-EBC1856CEF78">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_ARKIVE_AVAL_COMPORT" id="142FE307-378A-4BB4-90A7-BBCA4CAA82CD">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_AVAL_AUTOR" id="23D5D677-9845-1457-D265-288EDE57C621">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_AVAL_PESO" id="6537F284-724B-2796-1534-2103728AAE9B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_AVAL_ATIVIDADE" id="9D75A5CC-AE79-1FE5-865D-515C24201CD4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_AVAL_APETITE" id="B0D27F8F-9EA6-93FE-8DC8-EE053A3C57B1">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_AVAL_IDADE" id="BCD95CB5-E74F-969A-3235-8E3BABACF79C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

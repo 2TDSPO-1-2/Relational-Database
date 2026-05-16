@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D9041495-5065-F171-7D4B-18E701B93605" name="TB ARKIVE EVENTO JORNADA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela append-only de eventos relevantes da jornada do responsável, pet, veterinário e clinica. Serve como ponte para analytics, datahouse e futura camada de dados.]]></commentInRDBMS>
+<generatorID>CA4E8C61-7CB1-55DE-2720-D0FF0725A1B5</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID EVENTO JORN" id="39A25B0C-217D-9F81-6D79-E653E3C1A7E5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do evento de jornada.]]></commentInRDBMS>
+<generatorID>C6D47F42-0A7A-5E35-970C-31423983B7D0</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP EVENTO" id="0F7CE2B2-A6EC-B74B-5CA3-8DE1F0D26B20">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do evento de negocio. Ex: ANIMAL_CADASTRADO, ALERTA_LIDO, CONSULTA_CRIADA.]]></commentInRDBMS>
+<generatorID>CB14CBBB-3BE7-B111-7A0A-F11873A03385</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FAE52CA1-1B80-47B7-FA77-42D911A3956C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT EVENTO" id="7CE484CD-3EE5-B5A3-B1FB-1CA16B2B2E61">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que o evento ocorreu.]]></commentInRDBMS>
+<generatorID>8072FCC1-1410-B29E-040D-AA896B36FB9F</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP ORIGEM" id="BB86023A-5A2D-ED69-98AA-9A7AB418DD13">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem técnica do evento: APP, WEB, WHATSAPP, API, IA ou SISTEMA.]]></commentInRDBMS>
+<generatorID>DAA6B8CA-D832-B1AF-1052-BD12581E818D</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP ATOR" id="61012842-021F-3983-42C3-C0E2FEC6DF4F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ator responsável pelo evento: RESPONSAVEL, VETERINARIO, CLINICA, SISTEMA ou IA.]]></commentInRDBMS>
+<generatorID>2FBCB631-9B89-80B4-EC73-6A1B0D022EB6</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID RESPONSAVEL" id="C01E251C-F691-51DB-490C-BF0119493BCF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Responsável relacionado ao evento, quando aplicável.]]></commentInRDBMS>
+<generatorID>0BE5E76E-11E5-C5A4-97A7-90D27DC8091F</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B97D4DF9-DECC-69E0-70F2-59FC5F9DB2EB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID VETERINARIO" id="95D0A25D-20E1-FABB-73B2-2182FCEF80C2">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Veterinário relacionado ao evento, quando aplicável.]]></commentInRDBMS>
+<generatorID>D1ED64DD-1B04-A9C0-3C50-E84387F241AB</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>17046307-03A7-F75B-DE4E-D506D6D75864</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ANIMAL" id="6CD07537-14B1-3719-1898-2217981E6C20">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Animal relacionado ao evento, quando aplicável.]]></commentInRDBMS>
+<generatorID>0C18C0E4-D931-0CFC-EE26-22475FF44796</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3A93F461-7572-D4FC-8545-3E7F036394D8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CLINICA" id="000B872F-26AC-E149-E898-DF3C8ADE378E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica relacionada ao evento, quando aplicável.]]></commentInRDBMS>
+<generatorID>7C85FA23-7841-AF43-1F59-2440A1EEB414</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A9252D4F-6C32-8204-BB15-EDED2B1FAB3C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS CANAL" id="34483E2B-96DC-AF29-0746-621C63BB7628">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Canal funcional do evento, como MOBILE, WEB, WHATSAPP ou JOB.]]></commentInRDBMS>
+<generatorID>629A635A-14D9-676B-45E7-465E537420B2</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS CONTEXTO" id="B3778EE3-66F0-F6E5-0699-5EC9BAE36510">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição curta do contexto de negocio do evento.]]></commentInRDBMS>
+<generatorID>B0C683E0-9E72-B363-ADBA-A2AFB0E1DE43</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAYLOAD JSON" id="391570E4-2B71-D79D-D3D5-888C5DC05DE9">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dados complementares em JSON textual para alimentar analises futuras.]]></commentInRDBMS>
+<generatorID>7AC533F9-7CD9-6169-CB68-8A937791599A</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D830881-7AE0-F6CE-F79F-2BEA46BC393F" name="PK ARKIVE EVENTO JORNADA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>BDB5CD4C-97A3-A01D-034A-8FC967D854AF</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>39A25B0C-217D-9F81-6D79-E653E3C1A7E5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

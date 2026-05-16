@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="13F106B0-B1D2-C205-0799-7CFD0B379B3A" containerWithKeyObject="3E32BE16-656E-B96F-F5A0-BB84CA9CFC7C" localFKIndex="49E222C5-A14D-D432-4FD7-0F9356110F6D" name="FK_RESPCLDS_RESP">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>6AF79D90-8378-759D-F185-DD3D872A3307</importedID>
+<referredTableLongName>TB_ARKIVE_RESPONSAVEL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA255951-EA84-64E2-AE6C-BED32A679256</referredTableID>
+<keyObject>B1199ECB-EBDE-3BFE-E320-A24B9501F1FF</keyObject>
+<referredKeyID>B1199ECB-EBDE-3BFE-E320-A24B9501F1FF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_RESPONSAVEL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

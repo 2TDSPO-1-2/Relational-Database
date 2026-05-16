@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_RESPCLDS_CLINICA" directorySegmentName="seg_0" id="A63FF346-1E7E-FB85-6F34-1D2F01CE9A2B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:51 UTC</createdTime>
+<generatorID>CAA9016E-A89E-F633-6DF7-73E816ED5AA5</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>87866F31-43B5-CA3C-B94C-6F1F7E619223</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>638148DE-3138-7EDC-B550-7279222A98DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7078BC08-A442-07ED-6697-25F8FD28B657</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

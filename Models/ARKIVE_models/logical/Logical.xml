@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="201BC171-BD8A-50A3-9F23-17762C09703D" mainViewID="0848852B-A41D-FE2E-A81C-3103E2251CA8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:13:47 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

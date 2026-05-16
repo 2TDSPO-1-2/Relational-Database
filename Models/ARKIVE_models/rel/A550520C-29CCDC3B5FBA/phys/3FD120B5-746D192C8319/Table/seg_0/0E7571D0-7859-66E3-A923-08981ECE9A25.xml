@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_ARKIVE_RACA" directorySegmentName="seg_0" id="0E7571D0-7859-66E3-A923-08981ECE9A25">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_ESPECIE" id="0474EA07-2634-17B0-11C9-D7B50C0C7F33">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_ATIVO" id="049B6381-5B48-7148-0164-7833F5B69083">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:11 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TP_PORTE" id="38C9D8D8-6999-1FC1-AA85-5F45E9576994">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_RACA" id="6D71797B-FF8A-6891-3B50-17C396B987D4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RACA" id="6F05BCEF-2D3B-74D0-FA77-DD20ED8CB84F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_ARKIVE_RACA_ESPECIE" id="A46B3D9C-9D46-7BE7-C243-0DE0ABC7935E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RACA_ESPECIE" id="A14532E6-CDC2-9EF1-00F0-3F1A87AB3C94">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ARKIVE_RACA" id="1D774858-1ED3-299A-BCE5-C4EAF398838A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_ARKIVE_RACA_PORTE" id="12404B53-0752-8B3A-94B7-862D1F9C8DFF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_ARKIVE_RACA_ATIVO" id="72A945E1-4474-C893-3DCD-3D76B943F9F3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:11 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_ARKIVE_RACA_ESPECIE_NOME" id="EEF8F24E-2444-9F91-8E7D-AD18B87B1C61">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

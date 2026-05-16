@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PRED_RACA" directorySegmentName="seg_0" id="EFDAED0E-50E6-1C26-008F-BE580AB5AFE5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:51 UTC</createdTime>
+<generatorID>1D11B596-6598-A9BA-2D04-F565A438F3EB</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>591B2477-E31A-847D-F9D9-73515EA065CF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7C34A17D-BA58-AAD2-3DA6-8E17893A2C11</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>839D9FF8-2536-8116-2754-035B81C67948</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F9933134-2168-7ACF-EBD0-4A6D5D890B28" containerWithKeyObject="413EFA0B-2E4A-B8E3-D73C-ED785E5DC963" localFKIndex="A2327C40-1EC7-77F8-1337-CBDE939FA4D1" name="FK_AVAL_ANIMAL">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>F885C86F-7742-CF7E-84B7-7C42E0F071C6</importedID>
+<referredTableLongName>TB_ARKIVE_ANIMAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3CD61F9F-6975-D56D-3096-4BC8E45509F4</referredTableID>
+<keyObject>DC3EFDF6-0590-02C9-2CCD-911A3F96AE00</keyObject>
+<referredKeyID>DC3EFDF6-0590-02C9-2CCD-911A3F96AE00</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ANIMAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

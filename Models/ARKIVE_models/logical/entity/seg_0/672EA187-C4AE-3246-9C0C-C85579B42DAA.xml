@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="672EA187-C4AE-3246-9C0C-C85579B42DAA" name="TB ARKIVE AVALIACAO BEM ESTAR">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Avaliações recorrentes de bem-estar do animal, cobrindo peso, apetite, atividade, comportamento e observações longitudinais.]]></commentInRDBMS>
+<generatorID>413EFA0B-2E4A-B8E3-D73C-ED785E5DC963</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID AVALIACAO BEM ESTAR" id="FC382E2F-B399-1EE1-7EFF-2392875C5CCF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da avaliação de bem-estar.]]></commentInRDBMS>
+<generatorID>2CFEC152-BE5A-56AC-471F-89CFC08B9D3C</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ANIMAL" id="95D6C71E-7B73-3059-FA19-F3A1C1CE4754">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Animal avaliado.]]></commentInRDBMS>
+<generatorID>35A1C290-8ED3-EC59-803C-D99669A363E3</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<referedAttribute>3A93F461-7572-D4FC-8545-3E7F036394D8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID RESPONSAVEL" id="4501B068-B345-ED88-DAED-2948D29F617E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Responsável que informou a avaliação, quando aplicável.]]></commentInRDBMS>
+<generatorID>F5EBE80B-652B-8B06-5280-30C6B85544A5</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B97D4DF9-DECC-69E0-70F2-59FC5F9DB2EB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID VETERINARIO" id="A228BEAD-40C4-7E98-3550-AA2067905E2B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Veterinário que registrou a avaliação, quando aplicável.]]></commentInRDBMS>
+<generatorID>8E9AF1EA-F14A-78AD-2516-B442CB341D8C</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>17046307-03A7-F75B-DE4E-D506D6D75864</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CONSULTA" id="46776BA8-33FB-106A-21E8-9309504E50F6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Consulta associada à avaliação, quando aplicável.]]></commentInRDBMS>
+<generatorID>4C432FF4-E562-A95B-E131-50BBB52EB02E</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>65863399-7958-F6D4-64B1-46F758DF449F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT AVALIACAO" id="FA58A8ED-DFEE-79C1-E5E4-FC5EA88EE392">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da avaliação.]]></commentInRDBMS>
+<generatorID>8C286546-C3CD-4782-EAD1-0BD206B850DC</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR IDADE" id="92705DDC-B9FE-AA5F-D6E6-300994BDD8F8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Idade real ou aproximada do animal em anos.]]></commentInRDBMS>
+<generatorID>FAE25394-47B6-BF97-FBC5-BADC51E1E972</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>08FE6E22-83DD-8E24-9896-8C47D43F1705</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KG PESO" id="1F90AE14-814C-70C8-8B37-C475B6E3C027">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Peso observado do animal em quilogramas.]]></commentInRDBMS>
+<generatorID>50B8676B-6E30-B06C-CB18-AAC7EE7BF104</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>630CFDF9-3D97-4C92-1AC2-39E62B198014</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS APETITE" id="69C29827-CB18-F068-F921-AB218EF315A3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de apetite observado.]]></commentInRDBMS>
+<generatorID>4089F629-1799-C853-AFF6-1E972FE193B6</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS ATIVIDADE" id="3BCF5A10-1388-E576-CB2D-190C2834DAC4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível de atividade observado.]]></commentInRDBMS>
+<generatorID>69D4DC38-A643-0FD0-1FDD-359ACF3E6A6C</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS COMPORTAMENTO" id="88DA777A-E812-8479-0AAD-94C095E1E035">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado comportamental observado.]]></commentInRDBMS>
+<generatorID>E80D41AB-42C2-D4D9-C4B2-D024582AF307</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS OBSERVACAO" id="CCD64673-DEFE-57B9-9ECA-D7D4D4FCB4A7">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Observação livre sobre rotina, nutrição, comportamento ou saúde geral.]]></commentInRDBMS>
+<generatorID>85C7C305-1A48-31FE-0DE2-4066A100B0DC</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="319609C8-45A5-0DEA-7A80-2D2647CBBB3E" name="PK ARKIVE AVAL BEM ESTAR">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>0C84083B-CC23-FEF7-8CF0-EBC1856CEF78</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FC382E2F-B399-1EE1-7EFF-2392875C5CCF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C5DBE3D-4D67-919E-8A13-EABAA9A76F2E" name="TB_ARKIVE_LOG_ERRO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auditoria de erros gerados por procedures e rotinas PL/SQL.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>B64E042B-A276-B70A-CA36-E1823C493726</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LOG_ERRO" id="24E91A69-251A-7B59-89F5-F340D78A5C85">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do log de erro.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>8E739044-6D7E-7B51-7C6D-1BD5C8CD1136</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NM_PROCEDURE" id="E5A73ACF-8C5A-540E-488D-F4E669C2A44E">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da procedure ou rotina que gerou o erro.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>2A03CD9E-95E7-7F9F-6B53-86881421E0AA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8952FA9D-E620-768E-6AB6-CF7431C513E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_USUARIO" id="0636D81C-3FBA-FC2C-2129-C97DBCCA8410">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário Oracle que executou a rotina.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>D56F11FE-0496-7D60-FAC9-7E74A1C988E3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8952FA9D-E620-768E-6AB6-CF7431C513E8</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_OCORRENCIA" id="53E4A512-E2FA-2F7D-B2A2-09BE74EEDC5F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da ocorrência do erro.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>44A245B7-9BFA-DE0F-D17C-34183160F91C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_ERRO" id="A2B89B31-A1FC-1C71-E8EB-13E5C48DA1A2">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código Oracle do erro.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>4FFDBB6B-A4B8-1606-B1DF-381DC40AAB85</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MENSAGEM_ERRO" id="2F2457AE-EDFC-CA1C-325E-BCEFD2E0CA22">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Mensagem descritiva do erro.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>57E01AAC-9B7E-B6F0-52E6-F174C71104BA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="145FE0DB-F7E7-201F-D491-2A01D9DC7B23" name="PK_ARKIVE_LOG_ERRO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>BA40892E-54A4-3382-B867-6C13EFD0E49D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24E91A69-251A-7B59-89F5-F340D78A5C85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

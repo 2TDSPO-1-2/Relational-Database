@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="638148DE-3138-7EDC-B550-7279222A98DD" name="TB ARKIVE CLINICA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica ou hospital veterinário parceiro.]]></commentInRDBMS>
+<generatorID>50C1139A-E0B9-9F25-0F4B-E59FED99482D</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CLINICA" id="A9252D4F-6C32-8204-BB15-EDED2B1FAB3C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da clinica.]]></commentInRDBMS>
+<generatorID>0B807FC4-95AB-59DA-53D2-1F38912AFD66</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM CLINICA" id="67ABFE98-615A-9BAC-A30B-B018F8A9172A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da clinica.]]></commentInRDBMS>
+<generatorID>FC636CF1-A8D4-9EB8-4F58-CC159A4AEB38</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>188C5314-D598-42A9-C25B-6609B3D37D13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DC CNPJ" id="38FC26DA-AEF7-F217-734E-5606AA32DB41">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[CNPJ da clinica.]]></commentInRDBMS>
+<generatorID>1EB88006-1227-75E2-3B32-704783ACFDBD</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>AC90379E-3490-CCAE-B115-2D8B75B93DB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS ENDERECO" id="56390E0F-B1EC-0B3F-D7C1-046AF6BC8139">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Endereço da clinica.]]></commentInRDBMS>
+<generatorID>54EA8431-BC02-2052-D88B-573221DDA205</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ED5636A1-F467-4972-AB3A-ABA6D393225B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR CONTATO" id="B72CBB8C-D430-13E0-BC08-45460DF3A7C9">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone de contato da clinica.]]></commentInRDBMS>
+<generatorID>01949B06-EC68-3D15-AC5D-190053F29C74</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS EMAIL" id="377723B0-233E-F98A-F211-D41F663437F3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail de contato da clinica.]]></commentInRDBMS>
+<generatorID>31048DAC-884E-2D44-AE86-5E2E2BC01119</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>75E8A142-492C-CD70-2674-59315FEC5038</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST ATIVO" id="1935D31F-2E49-C8A7-1F67-EB71EF50E10E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão logica: S = ativo, N = inativo.]]></commentInRDBMS>
+<generatorID>D5788C02-A69D-6039-91EB-0D3C590F352F</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87866F31-43B5-CA3C-B94C-6F1F7E619223" name="PK ARKIVE CLINICA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>CDB1E1F6-DEB6-1A38-1A76-E21CD3595A9B</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9252D4F-6C32-8204-BB15-EDED2B1FAB3C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="63F88C75-ABA5-9899-F6F6-86D0A34EB9E3" name="UQ ARKIVE CLINICA CNPJ">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>2F00AD08-98D6-FE8E-A7B1-80AFD639E69E</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>38FC26DA-AEF7-F217-734E-5606AA32DB41</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

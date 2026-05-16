@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E32BE16-656E-B96F-F5A0-BB84CA9CFC7C" name="TB_ARKIVE_RESPONSAVEL_CLINICA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento N:N entre responsáveis e clinicas onde existe vinculo operacional, clinico ou de atendimento.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>8185C343-19AF-999F-888F-B49F588F7825</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RESPONSAVEL" id="62CD2446-25AD-B847-6913-A4B2F193CCF7">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Responsável vinculado à clinica.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>277C6F61-50EF-9BF6-63BF-BC87308474A1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13F106B0-B1D2-C205-0799-7CFD0B379B3A" referredColumn="7DB25D81-B61D-8753-55A5-19ADB336C804"/>
+</associations>
+</Column>
+<Column name="ID_CLINICA" id="75D7246C-A3E1-B44C-D5BA-FA506FFF5B56">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica vinculada ao responsável.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>40066AF0-723A-E9E5-9846-840BBEFAB8AD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAA9016E-A89E-F633-6DF7-73E816ED5AA5" referredColumn="0B807FC4-95AB-59DA-53D2-1F38912AFD66"/>
+</associations>
+</Column>
+<Column name="DT_VINCULO" id="8366813A-20E4-241D-A081-481FE16EDEF9">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de criação do vinculo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>453375A5-25B9-FA31-8FF7-DD7BB030F0F5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CB02720-3861-19C6-B916-A8F2781D4FDF" name="PK_ARKIVE_RESP_CLINICA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>6829ABBA-FDD2-B835-B2A7-4DB6B8799C34</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62CD2446-25AD-B847-6913-A4B2F193CCF7"/>
+<colUsage columnID="75D7246C-A3E1-B44C-D5BA-FA506FFF5B56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3ACC692-3110-1BFA-4C60-06B6DC1828CB" name="IX_ARKIVE_RESPCLDS_CLINICA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>CA828926-02C2-C2E8-6AC6-C6C533A93F48</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75D7246C-A3E1-B44C-D5BA-FA506FFF5B56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA15690B-F5AC-4EC6-8580-D790BBB6DA8B" name="FK_RESPCLDS_CLINICA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75D7246C-A3E1-B44C-D5BA-FA506FFF5B56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49E222C5-A14D-D432-4FD7-0F9356110F6D" name="FK_RESPCLDS_RESP">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62CD2446-25AD-B847-6913-A4B2F193CCF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

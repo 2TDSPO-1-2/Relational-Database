@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A724819-EFC7-76C0-AE34-A627BF1A4968" name="TB ARKIVE VETERINARIO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Profissional veterinário, vinculado ou não a uma clinica.]]></commentInRDBMS>
+<generatorID>85439F2C-989D-6F2D-9CD1-CF1E26FDDE6C</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID VETERINARIO" id="17046307-03A7-F75B-DE4E-D506D6D75864">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do veterinário.]]></commentInRDBMS>
+<generatorID>6379E6BA-8F1A-A01C-052C-DD17AA7031BC</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM VETERINARIO" id="527F1A9F-5643-FDE0-7CFC-2B583CE70C1B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do veterinário.]]></commentInRDBMS>
+<generatorID>ED0F3AE1-818C-82F3-D0B0-FE8CCBF4DC32</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FAE52CA1-1B80-47B7-FA77-42D911A3956C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DC CRMV" id="14C7B893-F61A-75ED-85C9-E26E74A96F8F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro profissional do veterinário.]]></commentInRDBMS>
+<generatorID>7A9D184B-FC6A-4AF5-BF18-8F64CDAA19AD</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9EE104D7-E52C-8922-DB76-FB9E22A9726A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS ESPECIALIDADE" id="BA4F2597-C22E-B7C3-3E2C-0DFD18371CA5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especialidade do veterinário.]]></commentInRDBMS>
+<generatorID>5EA96E73-74E2-077E-5AA4-446706BE597D</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FAE52CA1-1B80-47B7-FA77-42D911A3956C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS EMAIL" id="5E738243-A4B0-971E-16B9-DB2FE5E141F6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail do veterinário.]]></commentInRDBMS>
+<generatorID>F74F970B-35EC-AE0B-3176-8EF2B491465F</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>75E8A142-492C-CD70-2674-59315FEC5038</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CLINICA" id="D1F79800-18C3-DC97-0E37-DFF108FFE516">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica fixa do veterinário; nulo para autônomo.]]></commentInRDBMS>
+<generatorID>E8D13B91-DDB1-7BEC-9477-450C4DE8C7A6</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A9252D4F-6C32-8204-BB15-EDED2B1FAB3C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST ATIVO" id="59B96A76-E567-0C7C-524C-EFCF7743E5E3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão logica: S = ativo, N = inativo.]]></commentInRDBMS>
+<generatorID>788E6229-5E75-3277-2941-1FE5D40A4DFB</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4AFAF47D-C479-730F-8FFD-7431CB3F0BF3" name="PK ARKIVE VETERINARIO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>1C79A63B-0E15-919C-AECC-E42D4A549E14</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>17046307-03A7-F75B-DE4E-D506D6D75864</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E83ED27A-91E1-35A6-7613-E780B5F9BAE1" name="UQ ARKIVE CRMV">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>C6D8E683-3AC0-332B-CEED-B644C7308917</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>14C7B893-F61A-75ED-85C9-E26E74A96F8F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

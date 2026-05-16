@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ALERTA_CLINICA" directorySegmentName="seg_0" id="D8ED83FA-692A-7F4D-908D-4AA4057F0EDF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>62FF7EB6-E9BC-3DC8-3F1C-6F74F2CD94BB</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>87866F31-43B5-CA3C-B94C-6F1F7E619223</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>638148DE-3138-7EDC-B550-7279222A98DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>84AD8C65-0CCD-84CC-72F2-E749D6422C06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_ARKIVE_LOG_ERRO" directorySegmentName="seg_0" id="3C5DBE3D-4D67-919E-8A13-EABAA9A76F2E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NM_USUARIO" id="0636D81C-3FBA-FC2C-2129-C97DBCCA8410">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>USER</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_LOG_ERRO" id="24E91A69-251A-7B59-89F5-F340D78A5C85">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="DS_MENSAGEM_ERRO" id="2F2457AE-EDFC-CA1C-325E-BCEFD2E0CA22">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_OCORRENCIA" id="53E4A512-E2FA-2F7D-B2A2-09BE74EEDC5F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="CD_ERRO" id="A2B89B31-A1FC-1C71-E8EB-13E5C48DA1A2">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_PROCEDURE" id="E5A73ACF-8C5A-540E-488D-F4E669C2A44E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ARKIVE_LOG_ERRO" id="145FE0DB-F7E7-201F-D491-2A01D9DC7B23">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 15:16:51 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

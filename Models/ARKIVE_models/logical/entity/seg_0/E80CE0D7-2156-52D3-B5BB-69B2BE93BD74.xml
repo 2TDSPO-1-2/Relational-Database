@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E80CE0D7-2156-52D3-B5BB-69B2BE93BD74" name="TB ARKIVE RESPONSAVEL">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pessoa, instituição ou contato que pode se relacionar com um animal em contexto B2C ou B2B.]]></commentInRDBMS>
+<generatorID>BA255951-EA84-64E2-AE6C-BED32A679256</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID RESPONSAVEL" id="B97D4DF9-DECC-69E0-70F2-59FC5F9DB2EB">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do responsável.]]></commentInRDBMS>
+<generatorID>7DB25D81-B61D-8753-55A5-19ADB336C804</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM RESPONSAVEL" id="DBCD3CA9-B9DB-3D1C-02A4-5E903E7AE83A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do responsável, funcionário, instituição, ONG ou contato.]]></commentInRDBMS>
+<generatorID>4B478908-5D90-E951-6B33-A5F19AE77530</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FAE52CA1-1B80-47B7-FA77-42D911A3956C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DC CPF RG" id="02971CC7-3697-F932-BED3-E0A372550DEB">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[CPF, CNPJ ou outro identificador, quando aplicável.]]></commentInRDBMS>
+<generatorID>8F7898AF-32C0-580C-719F-9CAC9C9B418D</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS EMAIL" id="EC7BAA43-4DD9-6D75-2D24-F7D7416430DF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail de contato do responsável.]]></commentInRDBMS>
+<generatorID>A6766F0B-0CD5-CDAB-67AB-3BFC9BCE5A78</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>75E8A142-492C-CD70-2674-59315FEC5038</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR CONTATO" id="DEDFE4FF-8243-B2CD-528B-5408CA3E5B8E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone de contato do responsável.]]></commentInRDBMS>
+<generatorID>A6E0F379-3D62-CE29-1025-6D07DBF3D0B2</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP RESPONSAVEL" id="5FD1D174-48BB-B297-214F-8CAC8E6623A3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do responsável: TUTOR, FUNCIONARIO_CLINICA, FUNCIONARIO_ZOO, ONG, INSTITUICAO ou OUTRO.]]></commentInRDBMS>
+<generatorID>65ECE69E-E340-946F-8AFE-D8CA739895A3</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT CADASTRO" id="5666AC31-F75E-2829-C212-4243D16F36F5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de cadastro do responsável.]]></commentInRDBMS>
+<generatorID>06B4D7B9-3D40-94F9-ED5D-0D2EF8C4F946</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST NOTIFICACAO" id="D6A97CFA-3EF4-D2BC-926D-287B4B39D3DB">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se aceita notificações: S ou N.]]></commentInRDBMS>
+<generatorID>8455C24A-7D89-2A7C-3543-61ACA44C7302</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST ATIVO" id="3917B012-78CE-38EC-B3A9-8A7D03B757BC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão logica: S = ativo, N = inativo.]]></commentInRDBMS>
+<generatorID>A272F4E3-4941-2B67-D1F9-CD9B6AFA8B83</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE0D4BA6-86C0-7952-7955-5658AA9685B6" name="PK ARKIVE RESPONSAVEL">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>B1199ECB-EBDE-3BFE-E320-A24B9501F1FF</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B97D4DF9-DECC-69E0-70F2-59FC5F9DB2EB</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C5C7C648-5D8A-8D52-FF22-D8FBACB59A8F" name="UQ ARKIVE RESPONSAVEL DOC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>84FEDE26-2628-FE6F-DCC9-B880B68CF176</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>02971CC7-3697-F932-BED3-E0A372550DEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

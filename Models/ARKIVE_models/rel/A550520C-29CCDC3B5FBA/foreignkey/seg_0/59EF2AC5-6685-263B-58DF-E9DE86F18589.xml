@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="59EF2AC5-6685-263B-58DF-E9DE86F18589" containerWithKeyObject="CA4E8C61-7CB1-55DE-2720-D0FF0725A1B5" localFKIndex="69DE9077-AE70-3419-EC20-8A8D0E66010E" name="FK_EVTJ_CLINICA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>6D760C43-C9E2-CE00-454E-8CEDA193B5B5</importedID>
+<referredTableLongName>TB_ARKIVE_CLINICA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>50C1139A-E0B9-9F25-0F4B-E59FED99482D</referredTableID>
+<keyObject>CDB1E1F6-DEB6-1A38-1A76-E21CD3595A9B</keyObject>
+<referredKeyID>CDB1E1F6-DEB6-1A38-1A76-E21CD3595A9B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_CLINICA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

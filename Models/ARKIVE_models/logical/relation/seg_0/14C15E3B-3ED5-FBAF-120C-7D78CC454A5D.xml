@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_NPS_CONSULTA" directorySegmentName="seg_0" id="14C15E3B-3ED5-FBAF-120C-7D78CC454A5D">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:51 UTC</createdTime>
+<generatorID>9474B5EB-DE0B-B5BD-12FD-CE08DBA774AD</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>C8D5EB95-D76B-BAB2-49FC-C3E79955DA2F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1C034BAC-3B07-7CC0-6E6C-D1496399697B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8AD1E495-B8FD-99C9-8D6D-C120A16A2FFE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

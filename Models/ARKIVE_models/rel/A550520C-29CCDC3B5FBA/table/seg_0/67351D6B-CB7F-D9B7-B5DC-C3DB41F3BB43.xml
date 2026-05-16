@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67351D6B-CB7F-D9B7-B5DC-C3DB41F3BB43" name="TB_ARKIVE_PREDISPOSICAO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento N:N entre racas e doenças com predisposição genética.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>797915F3-DF1D-8BE8-2A14-551D52B568B0</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PREDISPOSICAO" id="AEC2D5B6-23C5-19A2-0D76-06A46D6DDC10">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do registro de predisposição.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>6D6F634C-D31D-243F-665C-19860E68A49A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_ESPECIE" id="147D5CA0-A917-98E3-666C-14FECCCC3BB2">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especie associada à predisposição.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>AEA3DF6C-6433-BD10-AE18-171135CC789A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FCB1CB2-9EEF-2DCD-6AD8-4F00E79BDF0F" referredColumn="AFEEFD73-7273-2703-70B6-E1636DD78F15"/>
+</associations>
+</Column>
+<Column name="ID_RACA" id="98FA8A9E-E347-E659-AE3C-678B244D3D79">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Raca com predisposição.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>D53396AC-5EA8-1B92-D010-DFE1DF6408DC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D11B596-6598-A9BA-2D04-F565A438F3EB" referredColumn="6F05BCEF-2D3B-74D0-FA77-DD20ED8CB84F"/>
+</associations>
+</Column>
+<Column name="ID_DOENCA" id="1DEA96D4-ECDE-929F-0A72-5DFBB8210363">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Doença associada à predisposição.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>4AA2DB2E-D15F-AB2B-065E-4356C9BA0D12</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D14C3A8F-FA4E-703B-73CF-26133E58DDB7" referredColumn="511D5328-4954-6E8C-B000-AD96D57304C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D141E77D-25BA-0375-9234-5E1D0371DCC7" name="PK_ARKIVE_PREDISPOSICAO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C42D45FB-2394-445F-B650-E6EBBA5A614A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEC2D5B6-23C5-19A2-0D76-06A46D6DDC10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC9C6B37-B430-8441-D122-6BBD4EE3B320" name="UX_ARKIVE_PREDISPOSICAO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>9D288B73-969A-79F3-2A8A-7300BB53C2D0</importedID>
+<indexExpression>ID_ESPECIE, NVL(ID_RACA, 0), ID_DOENCA</indexExpression>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="6832706F-D898-CA02-5072-57B47F460EB1" name="IX_ARKIVE_PRED_DOENCA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>22B916C9-2A63-6CFB-20E8-E278064EEF63</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DEA96D4-ECDE-929F-0A72-5DFBB8210363"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50F71539-8E3A-BD27-5E86-1A1BD7D783EF" name="FK_PRED_DOENCA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DEA96D4-ECDE-929F-0A72-5DFBB8210363"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E5933C0-CC4B-23BB-5B1D-1F4C815C34B7" name="FK_PRED_ESPECIE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="147D5CA0-A917-98E3-666C-14FECCCC3BB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58B4CF41-6FDE-7D34-37D8-F72E72F80434" name="FK_PRED_RACA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98FA8A9E-E347-E659-AE3C-678B244D3D79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

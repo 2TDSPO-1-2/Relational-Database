@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_DIAG_DOENCA" directorySegmentName="seg_0" id="623B419E-02C9-122D-1F8C-02A0B63B7ED3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:51 UTC</createdTime>
+<generatorID>24741FFD-9C46-B38D-4C44-19841D3B6A01</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>895C739D-1816-E228-BFA0-FFAB8D25C32B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2B4BA21E-A5EA-7C43-A286-7B854BEA8522</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ADC69EC5-FBCF-4236-5395-AE33EA3E6513</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

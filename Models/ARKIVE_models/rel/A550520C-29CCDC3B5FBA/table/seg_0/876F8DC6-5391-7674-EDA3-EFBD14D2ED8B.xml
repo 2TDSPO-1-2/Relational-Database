@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="876F8DC6-5391-7674-EDA3-EFBD14D2ED8B" name="TB_ARKIVE_CATEGORIA_DOENCA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Domínio de categorias clínicas de doenças]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>E8344A39-2B90-AB71-C70C-5AB4B7915428</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CATEGORIA" id="D7FA991D-4D2B-DFB6-5306-BD60B767BCC4">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da categoria.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>AAE4FB52-73C2-348E-99D5-B72E2C6BE53E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NM_CATEGORIA" id="FCA109E9-19BA-4039-9940-6ADD02F39F9D">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da categoria clínica.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C3F16D0C-1FA8-8A9D-91E8-F55597CFAB76</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8952FA9D-E620-768E-6AB6-CF7431C513E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_ATIVO" id="7BF2C8B3-3CBB-EE60-6F94-A0D742D5BC45">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.1.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão lógica da categoria de doença: S = ativo, N = inativo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>E933969D-6FB1-A5DF-9B4B-0A706B472ADA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="849332A7-3EEA-233B-60C5-476B9F4C2DB8" name="PK_ARKIVE_CATEGORIA_DOENCA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>BE31FFDD-1B20-2CF7-4BB6-BB98D2FB14B2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7FA991D-4D2B-DFB6-5306-BD60B767BCC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="349667DF-2D70-F1A3-B674-B6C72ECC191F" name="UQ_ARKIVE_CATEGORIA_NOME">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>3E12BE03-1F1F-A51F-B54A-FC61F858C398</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCA109E9-19BA-4039-9940-6ADD02F39F9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ARKIVE_CATDOENCA_ATIVO" directorySegmentName="seg_1" id="5A071E22-51DD-5FC1-FD1B-81D5E92C8AA4">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.1.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:11 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>89B421C7-6183-B152-D746-9239383C0ADC</importedID>
+<rule><![CDATA[ST_ATIVO IN ('S', 'N')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

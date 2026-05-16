@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="644E9AD5-179C-02E2-746E-C12334A253B4" name="TB ARKIVE CATEGORIA DOENCA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Domínio de categorias clínicas de doenças]]></commentInRDBMS>
+<generatorID>876F8DC6-5391-7674-EDA3-EFBD14D2ED8B</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CATEGORIA" id="695D97C6-177A-B249-D138-2F68937C14A3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da categoria.]]></commentInRDBMS>
+<generatorID>D7FA991D-4D2B-DFB6-5306-BD60B767BCC4</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM CATEGORIA" id="2263EE13-57BE-D2D3-7E86-79E1DCAB3350">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da categoria clínica.]]></commentInRDBMS>
+<generatorID>FCA109E9-19BA-4039-9940-6ADD02F39F9D</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8952FA9D-E620-768E-6AB6-CF7431C513E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST ATIVO" id="4050D5AB-C0F9-CEDC-36F4-CA778167E1E6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão lógica da categoria de doença: S = ativo, N = inativo.]]></commentInRDBMS>
+<generatorID>7BF2C8B3-3CBB-EE60-6F94-A0D742D5BC45</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A80A91B2-F930-6B4D-34ED-5D4465F30E14" name="PK ARKIVE CATEGORIA DOENCA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>849332A7-3EEA-233B-60C5-476B9F4C2DB8</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>695D97C6-177A-B249-D138-2F68937C14A3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="576E674A-3B43-F983-52B5-F31EC9F0D3B7" name="UQ ARKIVE CATEGORIA NOME">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>349667DF-2D70-F1A3-B674-B6C72ECC191F</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>2263EE13-57BE-D2D3-7E86-79E1DCAB3350</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

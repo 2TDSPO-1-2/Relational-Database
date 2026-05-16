@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" mainViewID="E6D4852C-C13A-527D-4488-B0D162C68089">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:13:53 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>arkive_ddl-mod-orcl_v13.sql</fileName>
+<pathName>/home/lucca/Documentos/FIAP/ANO2/MRDB</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>arkive_ddl-mod-orcl_v13.1.sql</fileName>
+<pathName>/home/lucca/Documentos/FIAP/ANO2/MRDB</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

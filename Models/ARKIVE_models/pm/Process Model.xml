@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="4E58A613-054F-A1B4-3679-F8DBFFF77C27">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:13:48 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

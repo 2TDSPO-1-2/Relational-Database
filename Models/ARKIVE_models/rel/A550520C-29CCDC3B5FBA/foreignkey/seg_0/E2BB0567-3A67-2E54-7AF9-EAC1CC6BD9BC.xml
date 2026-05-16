@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E2BB0567-3A67-2E54-7AF9-EAC1CC6BD9BC" containerWithKeyObject="2D1CD2E7-0407-713C-542F-361CA189478F" localFKIndex="665CCD6B-9683-8D5F-57A7-0313AD071F99" name="FK_PROT_RACA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>B4F68C5E-6896-3CF3-1C66-C69330B0A8F7</importedID>
+<referredTableLongName>TB_ARKIVE_RACA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0E7571D0-7859-66E3-A923-08981ECE9A25</referredTableID>
+<keyObject>1D774858-1ED3-299A-BCE5-C4EAF398838A</keyObject>
+<referredKeyID>1D774858-1ED3-299A-BCE5-C4EAF398838A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_RACA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

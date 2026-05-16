@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="494F4178-A48A-588C-66C3-5E88F68AD643" containerWithKeyObject="B13EBBFF-CAD9-3F7F-3E16-8133DA24B3CF" localFKIndex="48079311-1D92-0228-A5C7-BCACA3295ABD" name="FK_EVTPREV_PROTOCOLO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>0BF60348-402D-2031-F555-DEED70E6484E</importedID>
+<referredTableLongName>TB_ARKIVE_PROTOCOLO_PREVENTIVO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2D1CD2E7-0407-713C-542F-361CA189478F</referredTableID>
+<keyObject>BA67A523-600E-0978-0270-8F2B46D6AA95</keyObject>
+<referredKeyID>BA67A523-600E-0978-0270-8F2B46D6AA95</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PROTOCOLO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

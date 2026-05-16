@@ -1,0 +1,260 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B13EBBFF-CAD9-3F7F-3E16-8133DA24B3CF" name="TB_ARKIVE_EVENTO_PREVENTIVO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Instancia de aplicação ou vencimento de um protocolo preventivo para um animal.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>396210EA-3E4E-B33A-EF88-FD6D1C31834E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EVENTO_PREV" id="314F2FB9-0F16-7650-0B34-2F60CFF79209">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do evento preventivo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C98C5D41-5DD2-EE95-EB30-B94EEE069682</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="DT_APLICACAO" id="E460BEB3-C744-F170-D0C8-3634EE09750C">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de aplicação, obrigatória apenas quando realizado.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>698A3636-9C32-71FB-18AC-6AAA18A2CF21</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_PROXIMO" id="FDADE562-7842-2EFE-0648-167B4C7BB281">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Próxima data prevista para o cuidado preventivo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>9708FA2C-793B-051B-E6E1-35F36BB7CE7D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_STATUS" id="00B944E4-DAB6-3390-1EB9-678757BBD482">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do evento preventivo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>A104C175-166B-7125-C79C-0AC717FD1468</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<defaultValue>&apos;Pendente&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_ALERTA" id="614BD889-C714-6C60-9A02-A290C2902CE7">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se alerta já foi disparado: S ou N.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>52EC7FA5-EEC9-6CCB-08BA-ABFA40DEB648</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_OBSERVACAO" id="09EF5297-AE1C-6C2D-D855-38B1C4538333">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Observações sobre o evento preventivo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>DD187A8D-4402-6FF7-01F5-59F3F91ABC0A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ANIMAL" id="809AA04D-37EA-B880-2343-D5E1ED2EE4DA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Animal relacionado ao evento.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>716E36D2-FD7E-22C5-1EFC-2C6F48869566</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6CC1843-6D7A-D7AB-F74B-2DDB3E5C8D00" referredColumn="0527DF64-726A-FBE5-7F8A-CA0074F9006F"/>
+</associations>
+</Column>
+<Column name="ID_PROTOCOLO" id="78F56881-2D7B-B146-F4DD-B77DAE97BE9C">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Protocolo preventivo aplicado.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>78511432-0067-9CEC-D619-A621B240B859</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="494F4178-A48A-588C-66C3-5E88F68AD643" referredColumn="26E7299A-1A06-06E0-FBF2-3772EE5865AC"/>
+</associations>
+</Column>
+<Column name="ID_CONSULTA" id="759FD385-9C31-A8CE-0E18-620CB6B9CAF3">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Consulta que originou o evento, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>2CD65F9C-402F-9EA6-3366-E18B668F53E7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B96B413B-A968-A662-440C-735E810A04D8" referredColumn="0D1B87ED-0265-0348-D563-31F9E1137591"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE35DB69-5F45-233B-A0F4-A9AAC4AE099C" name="PK_ARKIVE_EVENTO_PREV">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>A08FDFF2-13A7-E737-5AD1-791540EC2229</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="314F2FB9-0F16-7650-0B34-2F60CFF79209"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27F0B983-60F2-4BDF-EE97-F68496B6F2BC" name="IX_ARKIVE_EVTPREV_ANIMAL">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>94109A3E-E6F4-847F-58A5-777BF5687267</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="809AA04D-37EA-B880-2343-D5E1ED2EE4DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2312E65B-132C-307E-07F0-89FE56D5870A" name="IX_ARKIVE_EVTPREV_PROTOCOLO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>2E1ACEE0-2584-0F53-3C60-8DDFFA4C1B1C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78F56881-2D7B-B146-F4DD-B77DAE97BE9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D7BC040-EE25-F3C6-38E2-422367EBD79C" name="IX_ARKIVE_EVTPREV_CONSULTA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>58D69519-6AA3-811A-57B3-A0B3D134B664</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="759FD385-9C31-A8CE-0E18-620CB6B9CAF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9702E917-5CE8-A403-CCBF-B8A4D8753144" name="FK_EVTPREV_ANIMAL">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="809AA04D-37EA-B880-2343-D5E1ED2EE4DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2DCFA8B-E048-850A-1178-EC7A29403AB3" name="FK_EVTPREV_CONSULTA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="759FD385-9C31-A8CE-0E18-620CB6B9CAF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48079311-1D92-0228-A5C7-BCACA3295ABD" name="FK_EVTPREV_PROTOCOLO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78F56881-2D7B-B146-F4DD-B77DAE97BE9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ARKIVE_EVTPREV_STATUS" directorySegmentName="seg_0" id="608CB5EA-07EF-01D5-8117-D4EF3B5AEBAD">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>A09FE9A3-BDA7-3990-7006-6D9C008B56B0</importedID>
+<rule><![CDATA[ST_STATUS IN ('REALIZADO', 'PENDENTE', 'ATRASADO')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_EVTPREV_ALERTA" directorySegmentName="seg_0" id="DB892AE9-8FB3-551A-54B8-0C6618A7489D">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>D8B9BCE0-D69D-BD84-6115-E387E8C52C58</importedID>
+<rule><![CDATA[ST_ALERTA IN ('S', 'N')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_EVTPREV_APLIC" directorySegmentName="seg_0" id="D3E7B011-0879-468A-EFD3-268E58165DC8">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>25CA47AE-C295-AEF9-FC04-171FCF015C27</importedID>
+<rule><![CDATA[(ST_STATUS = 'REALIZADO' AND DT_APLICACAO IS NOT NULL) OR (ST_STATUS IN ('PENDENTE', 'ATRASADO') AND DT_APLICACAO IS NULL)]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_EVTPREV_DATAS" directorySegmentName="seg_0" id="E7C4DF1C-B61C-B53A-AE06-91253699BBF8">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>438DF266-E5EC-1792-2D10-2B700F883BF9</importedID>
+<rule><![CDATA[DT_APLICACAO IS NULL OR DT_PROXIMO >= DT_APLICACAO]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

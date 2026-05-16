@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ANIMAL_CLINICA_CAD" directorySegmentName="seg_0" id="0382AAC2-124A-33C3-AD10-5F93FABD363C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>543D92A9-392B-86C8-2C0C-DA8F16D35730</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>87866F31-43B5-CA3C-B94C-6F1F7E619223</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>638148DE-3138-7EDC-B550-7279222A98DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>318E81F4-F8A9-8FB3-EC8E-53FE7D2284FF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

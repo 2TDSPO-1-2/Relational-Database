@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AVAL_VET" directorySegmentName="seg_0" id="8E9AF1EA-F14A-78AD-2516-B442CB341D8C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>4693AE4F-A487-4239-5DFC-2B87C3EA46DF</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>4AFAF47D-C479-730F-8FFD-7431CB3F0BF3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1A724819-EFC7-76C0-AE34-A627BF1A4968</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>672EA187-C4AE-3246-9C0C-C85579B42DAA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

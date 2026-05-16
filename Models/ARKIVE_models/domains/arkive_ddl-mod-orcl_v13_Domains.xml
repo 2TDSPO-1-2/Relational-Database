@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="arkive_ddl-mod-orcl_v13_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_5_2_0" id="08FE6E22-83DD-8E24-9896-8C47D43F1705">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="0E735EFE-ABBE-797F-CD6E-FE26092749BD">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_150" id="188C5314-D598-42A9-C25B-6609B3D37D13">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>150</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_40" id="24921B5C-C2E9-C9CD-EF39-A0E8083FED1A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_2" id="37BC852E-1A61-3F32-5B83-B6853223C0B8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_6_2_0" id="630CFDF9-3D97-4C92-1AC2-39E62B198014">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_200" id="75E8A142-492C-CD70-2674-59315FEC5038">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>200</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="8952FA9D-E620-768E-6AB6-CF7431C513E8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="8A36CB7A-1647-A3C2-D833-F7718A104A28">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CLOB_0_0_0" id="8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="9EE104D7-E52C-8922-DB76-FB9E22A9726A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>10</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_14" id="AC90379E-3490-CCAE-B115-2D8B75B93DB4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>14</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_2_0_0" id="CD2E41C2-99F0-317B-6AB4-929909DADCEF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_1" id="D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_255" id="ED5636A1-F467-4972-AB3A-ABA6D393225B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>255</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_30" id="EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="FAE52CA1-1B80-47B7-FA77-42D911A3956C">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>arkive_ddl-mod-orcl_v13_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

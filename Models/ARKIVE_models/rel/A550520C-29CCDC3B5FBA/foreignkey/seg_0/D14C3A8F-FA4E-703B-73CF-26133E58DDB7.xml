@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D14C3A8F-FA4E-703B-73CF-26133E58DDB7" containerWithKeyObject="67351D6B-CB7F-D9B7-B5DC-C3DB41F3BB43" localFKIndex="50F71539-8E3A-BD27-5E86-1A1BD7D783EF" name="FK_PRED_DOENCA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>BB57DFBF-3423-14AB-2737-377CB9CA4E80</importedID>
+<referredTableLongName>TB_ARKIVE_DOENCA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EE91EEE5-F6A4-5F9D-5729-28AB08953152</referredTableID>
+<keyObject>5C442D94-AD2C-8909-3619-D4D52717FF27</keyObject>
+<referredKeyID>5C442D94-AD2C-8909-3619-D4D52717FF27</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_DOENCA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

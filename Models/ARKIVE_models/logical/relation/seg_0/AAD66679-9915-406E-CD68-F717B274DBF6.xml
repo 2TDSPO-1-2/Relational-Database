@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ADESAO_PRESCRICAO" directorySegmentName="seg_0" id="AAD66679-9915-406E-CD68-F717B274DBF6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:50 UTC</createdTime>
+<generatorID>E9DD2055-26EB-BBD5-780D-087686EFF8B0</generatorID>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<engineerTo>
+<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
+</engineerTo>
+<sourcePk>E6D26BCA-0452-E076-2758-C12ED28EEE05</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7FA6D503-0666-5A4A-FEF9-423325632865</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>23BD6CAF-CDBD-1AAF-AC73-49BCB2BB9C82</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E7571D0-7859-66E3-A923-08981ECE9A25" name="TB_ARKIVE_RACA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogo de racas vinculadas a uma especie.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>F26A32BA-B050-41C1-BEEA-E7175EF3C95E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RACA" id="6F05BCEF-2D3B-74D0-FA77-DD20ED8CB84F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da raca.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>EACF76AF-AF93-BD08-203F-1512F7A2E3A1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NM_RACA" id="6D71797B-FF8A-6891-3B50-17C396B987D4">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da raca.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>CC58BACA-F465-4A32-1F9E-C7E620E8DDC2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FAE52CA1-1B80-47B7-FA77-42D911A3956C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESPECIE" id="0474EA07-2634-17B0-11C9-D7B50C0C7F33">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especie da raca.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>EB782650-F480-915A-E4FC-87FE3A1A1358</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B931A7A5-9DE7-D2D5-68D2-DD9274F3369D" referredColumn="AFEEFD73-7273-2703-70B6-E1636DD78F15"/>
+</associations>
+</Column>
+<Column name="TP_PORTE" id="38C9D8D8-6999-1FC1-AA85-5F45E9576994">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Porte predominante da raca.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>644B660D-1A9D-DD67-E0E6-8F2C276A4680</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_ATIVO" id="049B6381-5B48-7148-0164-7833F5B69083">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.1.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão lógica da raça: S = ativo, N = inativo.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>7E79BA62-3DE9-F3AA-B840-31324DC3B216</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D774858-1ED3-299A-BCE5-C4EAF398838A" name="PK_ARKIVE_RACA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>6FFF0102-877B-B6D5-DCBB-88A06E09B829</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F05BCEF-2D3B-74D0-FA77-DD20ED8CB84F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEF8F24E-2444-9F91-8E7D-AD18B87B1C61" name="UQ_ARKIVE_RACA_ESPECIE_NOME">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C6A21933-9A06-FBA1-A07B-0216AD649138</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0474EA07-2634-17B0-11C9-D7B50C0C7F33"/>
+<colUsage columnID="6D71797B-FF8A-6891-3B50-17C396B987D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A46B3D9C-9D46-7BE7-C243-0DE0ABC7935E" name="IX_ARKIVE_RACA_ESPECIE">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>D82CB988-8227-A304-8ABB-9512AA551579</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0474EA07-2634-17B0-11C9-D7B50C0C7F33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A14532E6-CDC2-9EF1-00F0-3F1A87AB3C94" name="FK_RACA_ESPECIE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0474EA07-2634-17B0-11C9-D7B50C0C7F33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ARKIVE_RACA_PORTE" directorySegmentName="seg_0" id="12404B53-0752-8B3A-94B7-862D1F9C8DFF">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>25610E25-D1D7-439D-F467-9A5607D93840</importedID>
+<rule><![CDATA[TP_PORTE IS NULL OR TP_PORTE IN ('PEQUENO', 'MEDIO', 'GRANDE')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_RACA_ATIVO" directorySegmentName="seg_1" id="72A945E1-4474-C893-3DCD-3D76B943F9F3">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.1.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:11 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>32B2E345-32FF-FF84-D6AF-05837DD3BD49</importedID>
+<rule><![CDATA[ST_ATIVO IN ('S', 'N')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

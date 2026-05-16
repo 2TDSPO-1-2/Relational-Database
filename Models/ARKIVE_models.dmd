@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ARKIVE_models" id="33BD1FEC-7589-8CB4-ABC3-6B9BAD0012AE" version="3.5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:13:47 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>33BD1FEC-7589-8CB4-ABC3-6B9BAD0012AE</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F2CC560C-63F6-F101-0A2A-9EA589D0D1A3">
+<designStoragePath>/arkive_ddl-mod-orcl_v13</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="25BFECEA-90D4-F02E-F831-AC4AD6338797">
+<designStoragePath>/arkive_ddl-mod-orcl_v13</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="006583CD-9497-7749-ED6E-D954B437D1C8">
+<designStoragePath>/arkive_ddl-mod-orcl_v13.1</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E9DD2055-26EB-BBD5-780D-087686EFF8B0" containerWithKeyObject="BB4CEF1F-6B38-1AC1-F0E0-94C0DEF73CC2" localFKIndex="73DC3986-B930-B430-D3EC-6B279988AAE3" name="FK_ADESAO_PRESCRICAO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>8B96C13C-047C-A951-7196-14336C0D8428</importedID>
+<referredTableLongName>TB_ARKIVE_PRESCRICAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F5544293-146C-2BA4-855C-726748AD3866</referredTableID>
+<keyObject>E860B704-CFFE-9CB7-528C-F7109488BBD4</keyObject>
+<referredKeyID>E860B704-CFFE-9CB7-528C-F7109488BBD4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PRESCRICAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

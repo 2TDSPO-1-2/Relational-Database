@@ -1,0 +1,237 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F00320FD-F560-D47C-4E98-6058DDFA3B0E" name="TB_ARKIVE_DIAGNOSTICO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Diagnostico gerado em consulta, com possibilidade de insight por IA.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>17C331B4-5CC0-1729-6BDC-A8238E3584B4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DIAGNOSTICO" id="E01F27E0-3586-C902-22EF-0F5E52BECBEC">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do diagnostico.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>2FCA3020-7183-2558-F6C3-B6411B77B9DA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="DS_DIAGNOSTICO" id="30BBFFB4-614F-BA67-AF63-3C57C190535F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do diagnostico.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>7F1750A6-83FD-1200-6EAE-0B2359AFBD0D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_SEVERIDADE" id="68B20C23-8585-8818-0505-DE9BAC2E6584">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Severidade do diagnostico.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>F60D26A8-C8EE-08D3-1B22-6A4DDF87DCA9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E735EFE-ABBE-797F-CD6E-FE26092749BD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_CONFIRMADO" id="4BF31A2B-1B61-ECCC-0552-624F8827427E">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se o diagnostico esta confirmado: S ou N.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>A4C748B1-824E-A878-6A67-9607123F566A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_INSIGHT_IA" id="4ACDD018-8EF3-2063-26BE-EF6373FFE9D1">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sugestão diagnostica gerada pelo motor de regras ou IA.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>A0A3349A-B030-4AD0-5A75-B8A27017CEBD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_CONFIANCA" id="217F5720-0A84-2434-0D4F-80019AB1B293">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Score de confiança do insight, entre 0 e 100.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>2719AD3D-43E0-F9F0-AA62-540D84C24C8F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>08FE6E22-83DD-8E24-9896-8C47D43F1705</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_VALIDACAO_VET" id="DD861197-5602-94EA-FF81-3AF6DA365107">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Aceite do veterinário sobre o insight: S ou N.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>023DC712-DDC5-D46D-8D8A-9CD106B1B848</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>D84DBCD5-57C4-E4FA-9302-DF7E3E88BD06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CONSULTA" id="D4EA3769-A4C0-3351-6176-CEFEBAAF2F92">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Consulta associada ao diagnostico.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>E5F8CCDA-73A4-2B73-FB27-5A2083207647</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3ED9FA15-10A8-0B97-C1CB-A6A07F102558" referredColumn="0D1B87ED-0265-0348-D563-31F9E1137591"/>
+</associations>
+</Column>
+<Column name="ID_DOENCA" id="967A63FF-BD9C-39DD-E46E-4CD8969DD2C1">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Doença catalogada associada ao diagnostico.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>0EBDE8AF-C920-DDF0-336A-05624BAE3B25</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24741FFD-9C46-B38D-4C44-19841D3B6A01" referredColumn="511D5328-4954-6E8C-B000-AD96D57304C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A4D51C0-CF48-D178-5674-CF0A6DBCA67D" name="PK_ARKIVE_DIAGNOSTICO">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>18837C67-8D9A-59A4-BEA4-8E0F026F1AFF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E01F27E0-3586-C902-22EF-0F5E52BECBEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5823880D-BDDD-190C-EF68-B994C6B85A0F" name="IX_ARKIVE_DIAG_CONSULTA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>2F7E37FA-2F5D-375C-1D6F-112B5EBE7ADF</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4EA3769-A4C0-3351-6176-CEFEBAAF2F92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D49A26D0-BA4F-27DB-B6A8-6FF0CA88506F" name="IX_ARKIVE_DIAG_DOENCA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>5898643A-3E29-4D86-F42B-3937DE52B931</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="967A63FF-BD9C-39DD-E46E-4CD8969DD2C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5428AF0-5556-7E8A-AA1D-BEAD4DCCE6EA" name="FK_DIAG_CONSULTA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4EA3769-A4C0-3351-6176-CEFEBAAF2F92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44C9C322-C156-985D-0014-49EBB98AEF30" name="FK_DIAG_DOENCA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="967A63FF-BD9C-39DD-E46E-4CD8969DD2C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ARKIVE_DIAG_SEVERIDADE" directorySegmentName="seg_0" id="D91D1698-B81F-444D-18D0-D8E0527B1086">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>55819EA5-92A7-84C2-A2A8-7777CE080A83</importedID>
+<rule><![CDATA[TP_SEVERIDADE IS NULL OR TP_SEVERIDADE IN ('LEVE', 'MODERADA', 'GRAVE')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_DIAG_CONFIRMADO" directorySegmentName="seg_0" id="66BFC23E-6FB1-065B-9E76-A59C629A58FA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>9FA14F90-9143-A7FA-929E-26260195F93D</importedID>
+<rule><![CDATA[ST_CONFIRMADO IN ('S', 'N')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_DIAG_VALIDACAO" directorySegmentName="seg_0" id="BB709EEC-3FC8-1A8A-80D7-F55CC4E82FBD">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>90DD4562-6F7C-BDDC-6E6E-D8CC303AF68B</importedID>
+<rule><![CDATA[ST_VALIDACAO_VET IS NULL OR ST_VALIDACAO_VET IN ('S', 'N')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_DIAG_CONFIANCA" directorySegmentName="seg_0" id="4B8F9F48-DEB0-F7A8-0846-EA7942AE0F8F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>D9FF2125-B8DE-D04D-1E1B-AE599AFA25D1</importedID>
+<rule><![CDATA[PC_CONFIANCA IS NULL OR PC_CONFIANCA BETWEEN 0 AND 100]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

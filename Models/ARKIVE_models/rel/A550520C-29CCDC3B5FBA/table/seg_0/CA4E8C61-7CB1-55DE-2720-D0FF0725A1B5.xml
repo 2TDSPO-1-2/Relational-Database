@@ -1,0 +1,331 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA4E8C61-7CB1-55DE-2720-D0FF0725A1B5" name="TB_ARKIVE_EVENTO_JORNADA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela append-only de eventos relevantes da jornada do responsável, pet, veterinário e clinica. Serve como ponte para analytics, datahouse e futura camada de dados.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C36EB8C2-0E86-1A31-52F6-AAA91747AD99</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EVENTO_JORN" id="C6D47F42-0A7A-5E35-970C-31423983B7D0">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do evento de jornada.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>B261C465-3AAF-A966-7EC5-98FAA4358CE2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="TP_EVENTO" id="CB14CBBB-3BE7-B111-7A0A-F11873A03385">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do evento de negocio. Ex: ANIMAL_CADASTRADO, ALERTA_LIDO, CONSULTA_CRIADA.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>9997B712-FF06-F55D-E892-D025304B5B08</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FAE52CA1-1B80-47B7-FA77-42D911A3956C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_EVENTO" id="8072FCC1-1410-B29E-040D-AA896B36FB9F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que o evento ocorreu.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>8085401D-1F36-EACF-0F81-592C2D40CE3C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ORIGEM" id="DAA6B8CA-D832-B1AF-1052-BD12581E818D">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem técnica do evento: APP, WEB, WHATSAPP, API, IA ou SISTEMA.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>E81EF2E2-235B-813C-2E50-33F43FADAFD3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ATOR" id="2FBCB631-9B89-80B4-EC73-6A1B0D022EB6">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ator responsável pelo evento: RESPONSAVEL, VETERINARIO, CLINICA, SISTEMA ou IA.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>A8055B20-14C5-04EC-D3CF-D0D478A12069</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_RESPONSAVEL" id="07BBCE1C-F690-8574-B4CF-8A2DBBF3CB37">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Responsável relacionado ao evento, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>B7620D96-F580-EA9E-B8E3-4555BC955BDB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C9C99F1-AF8F-0DDA-FC0F-C69089A75B0B" referredColumn="7DB25D81-B61D-8753-55A5-19ADB336C804"/>
+</associations>
+</Column>
+<Column name="ID_VETERINARIO" id="45DAFD96-F460-158F-A708-61322825AE7D">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Veterinário relacionado ao evento, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>3DF5F532-5BF2-CC15-95EF-44C48A66B1E3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D97EB04-67D3-3DAC-4CE2-58FBACDC65EF" referredColumn="6379E6BA-8F1A-A01C-052C-DD17AA7031BC"/>
+</associations>
+</Column>
+<Column name="ID_ANIMAL" id="63BF83ED-D6E9-7AA2-89A7-2F62972B1A2F">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Animal relacionado ao evento, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>400F6A0C-F91B-651B-21D5-6648571CAE77</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B314C56D-67A2-CD5B-726A-F30FF2DCB924" referredColumn="0527DF64-726A-FBE5-7F8A-CA0074F9006F"/>
+</associations>
+</Column>
+<Column name="ID_CLINICA" id="45D232AE-117A-8FF1-F274-1A612E4D6108">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clinica relacionada ao evento, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>17D4B1A7-F4FF-A1BC-42FE-8DBB3E730A6B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A36CB7A-1647-A3C2-D833-F7718A104A28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59EF2AC5-6685-263B-58DF-E9DE86F18589" referredColumn="0B807FC4-95AB-59DA-53D2-1F38912AFD66"/>
+</associations>
+</Column>
+<Column name="DS_CANAL" id="629A635A-14D9-676B-45E7-465E537420B2">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Canal funcional do evento, como MOBILE, WEB, WHATSAPP ou JOB.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>45796BB7-56A6-8026-3599-F9A007FDCC9C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF5A8AB3-A61A-ED6F-235D-0BEE2ACD4AE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CONTEXTO" id="B0C683E0-9E72-B363-ADBA-A2AFB0E1DE43">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição curta do contexto de negocio do evento.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>70426EF6-5A56-19E6-FDC7-011E48648024</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYLOAD_JSON" id="7AC533F9-7CD9-6169-CB68-8A937791599A">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dados complementares em JSON textual para alimentar analises futuras.]]></commentInRDBMS>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>C2B5B808-772E-0D07-8FD6-925673269042</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDB5CD4C-97A3-A01D-034A-8FC967D854AF" name="PK_ARKIVE_EVENTO_JORNADA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>B08DD7A7-527F-9469-0020-995247C710DC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6D47F42-0A7A-5E35-970C-31423983B7D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EAD2F48-A168-670D-1EF2-900830F85E24" name="IX_ARKIVE_EVTJ_TIPO_DATA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>3AC5F3AA-AA8F-477A-F1A6-F22D4AA18C44</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB14CBBB-3BE7-B111-7A0A-F11873A03385"/>
+<colUsage columnID="8072FCC1-1410-B29E-040D-AA896B36FB9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96D5B7C3-6A41-8125-0E9B-E4236E9AEB9C" name="IX_ARKIVE_EVTJ_RESP">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>7A403CF0-F1FA-38CD-1B7E-26B1FD7031A8</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07BBCE1C-F690-8574-B4CF-8A2DBBF3CB37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A88DB3EE-C175-B105-E567-91E8F1AF35D3" name="IX_ARKIVE_EVTJ_VET">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>05BF96CA-8084-3B4E-DABB-6769ACAE5DF3</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45DAFD96-F460-158F-A708-61322825AE7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE672B1D-4E4B-718C-C9EA-118F78ECAEA9" name="IX_ARKIVE_EVTJ_ANIMAL">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>7E9875A0-A9DE-58B8-E805-E596AB83740E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63BF83ED-D6E9-7AA2-89A7-2F62972B1A2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F97C7523-95F9-2C1A-E9F7-4AD1C02C9BBF" name="IX_ARKIVE_EVTJ_CLINICA">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<importedID>562B00C4-220C-60A3-CE9A-4E19A98BF60C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45D232AE-117A-8FF1-F274-1A612E4D6108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2948FBB0-729D-AA5A-6F80-22F0C0E27522" name="FK_EVTJ_ANIMAL">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63BF83ED-D6E9-7AA2-89A7-2F62972B1A2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69DE9077-AE70-3419-EC20-8A8D0E66010E" name="FK_EVTJ_CLINICA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45D232AE-117A-8FF1-F274-1A612E4D6108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A32ABBFF-9CF3-46EE-48D4-CDB2AE43F319" name="FK_EVTJ_RESP">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07BBCE1C-F690-8574-B4CF-8A2DBBF3CB37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE268AB8-3815-24E4-41A0-5D3BC709A192" name="FK_EVTJ_VET">
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45DAFD96-F460-158F-A708-61322825AE7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ARKIVE_EVTJ_ORIGEM" directorySegmentName="seg_0" id="83A6EC75-F869-9E97-61C6-9CB389B2692C">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>0F43F4C1-8BEE-9D52-6501-DDFCB99C87A2</importedID>
+<rule><![CDATA[TP_ORIGEM IN ('APP', 'WEB', 'WHATSAPP', 'API', 'IA', 'SISTEMA')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_EVTJ_ATOR" directorySegmentName="seg_0" id="65149540-B741-E570-096E-D396A64177DB">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-10 12:14:42 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>D3E05C74-F123-01AF-D9A8-1C54684E37E9</importedID>
+<rule><![CDATA[TP_ATOR IS NULL OR TP_ATOR IN ('RESPONSAVEL', 'VETERINARIO', 'CLINICA', 'SISTEMA', 'IA')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_ARKIVE_EVTJ_PAYLOAD_JSON" directorySegmentName="seg_1" id="2B4F1361-3E27-B487-DEB9-1D25E3CF255B">
+<sourceDDLFile>arkive_ddl-mod-orcl_v13.1.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-05-11 17:18:11 UTC</createdTime>
+<ownerDesignName>ARKIVE_base</ownerDesignName>
+<importedID>576821FA-7CAA-7A0A-09F3-CDBE47A12D82</importedID>
+<rule><![CDATA[PAYLOAD_JSON IS JSON]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
