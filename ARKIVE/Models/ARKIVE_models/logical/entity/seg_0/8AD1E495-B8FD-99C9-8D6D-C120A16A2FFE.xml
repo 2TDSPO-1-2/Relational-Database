@@ -124,21 +124,6 @@
 <domain>8DFA20D1-BB7C-4AF7-5481-E58C2A6B3F9D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DT RESPOSTA" id="20F3F6D5-EB06-F614-49F6-C3F588FC6CE8">
-<createdBy>lucca</createdBy>
-<createdTime>2026-05-10 12:14:50 UTC</createdTime>
-<commentInRDBMS><![CDATA[Data e hora de envio do feedback.]]></commentInRDBMS>
-<generatorID>F6448BF6-D9C4-6BD5-458D-71348912C197</generatorID>
-<ownerDesignName>ARKIVE_models</ownerDesignName>
-<engineerTo>
-<item key="A550520C-0C32-39B4-9DC9-29CCDC3B5FBA" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
-<defaultValue>SYSDATE</defaultValue>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="ID VETERINARIO" id="9D44C683-4562-8741-74AD-EBEF91FF85DF">
 <createdBy>lucca</createdBy>
 <createdTime>2026-05-11 17:18:17 UTC</createdTime>

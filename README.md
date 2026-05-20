@@ -6,7 +6,10 @@
 
 ## 📋 Sobre o Projeto
 
-**ARKIVE** é uma aplicação que centraliza o histórico clínico de pets, coordena o relacionamento entre tutores, clínicas veterinárias e veterinários, e automatiza lembretes de cuidados preventivos. Este repositório contém o **banco de dados relacional Oracle** que sustenta toda a operação transacional do sistema.
+**ARKIVE** é um serviço de gerenciamento que oferece a simplificação dos procedimentos burocráticos clínico-veterinários, permitindo o acesso de veterinários, tutores e profissionais cuidadores responsáveis pelos pacientes animais.
+O sistema tem como base o registro do histórico dos pacientes, trazendo as informações inseridas para o app no pré-preenchimento de formulários, facilitando o trabalho veterinário.
+
+O ARKIVE contempla a cobertura de animais domésticos (pets comuns e exóticos), animais de fazenda e animais de zoológico, reunindo em uma única plataforma o cuidado com toda a diversidade da fauna sob tutela humana. 
 
 ### Disciplina
 **Mastering Relational and Non-Relational Database**  

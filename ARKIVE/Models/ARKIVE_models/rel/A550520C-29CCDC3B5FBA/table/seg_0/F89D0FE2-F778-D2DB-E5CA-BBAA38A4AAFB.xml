@@ -152,20 +152,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DT_RESPOSTA" id="F6448BF6-D9C4-6BD5-458D-71348912C197">
-<sourceDDLFile>arkive_ddl-mod-orcl_v13.sql</sourceDDLFile>
-<createdBy>lucca</createdBy>
-<createdTime>2026-05-10 12:14:42 UTC</createdTime>
-<commentInRDBMS><![CDATA[Data e hora de envio do feedback.]]></commentInRDBMS>
-<ownerDesignName>ARKIVE_models</ownerDesignName>
-<importedID>3EEBBA82-F480-A532-87BA-76E812F04846</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<domain>2D7C6BD8-7A80-79A7-17C6-BEE94FCCADC8</domain>
-<defaultValue>SYSDATE</defaultValue>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="AFE72D32-7863-64C6-F6D2-78FF63B0E9D6" name="PK_ARKIVE_FEEDBACK_NPS">

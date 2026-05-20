@@ -42,7 +42,7 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
   
 DECLARE
     v_sep VARCHAR2(80) := RPAD('=', 80, '=');
-    v_lin VARCHAR2(80) := RPAD('─', 80, '─');
+    v_lin VARCHAR2(80) := RPAD('-', 80, '-');
 BEGIN
 
     -- ### CONSULTA A: Total de atendimentos e peso médio por clínica
@@ -132,7 +132,7 @@ END;
   
 DECLARE
     v_sep VARCHAR2(80) := RPAD('=', 80, '=');
-    v_lin VARCHAR2(80) := RPAD('─', 80, '─');
+    v_lin VARCHAR2(80) := RPAD('-', 80, '-');
 BEGIN
 
     -- ### CONSULTA A: Nota NPS média por veterinário e especialidade
@@ -197,7 +197,7 @@ END;
 
 DECLARE
     v_sep VARCHAR2(90) := RPAD('=', 90, '=');
-    v_lin VARCHAR2(90) := RPAD('─', 90, '─');
+    v_lin VARCHAR2(90) := RPAD('-', 90, '-');
     v_peso_ant_str VARCHAR2(10);
     v_peso_prx_str VARCHAR2(10);
 
@@ -255,7 +255,7 @@ END;
    
 DECLARE
     v_sep VARCHAR2(90) := RPAD('=', 90, '=');
-    v_lin VARCHAR2(90) := RPAD('─', 90, '─');
+    v_lin VARCHAR2(90) := RPAD('-', 90, '-');
 
     -- >> Cursor explícito: todos os registros de NPS com JOINs para nomes
     CURSOR c_nps IS
@@ -384,7 +384,7 @@ END;
 
 DECLARE
     v_sep VARCHAR2(90) := RPAD('=', 90, '=');
-    v_lin VARCHAR2(90) := RPAD('─', 90, '─');
+    v_lin VARCHAR2(90) := RPAD('-', 90, '-');
     v_ds_status VARCHAR2(30);
     v_alerta_peso VARCHAR2(10);
 
@@ -456,7 +456,7 @@ END;
 
 DECLARE
     v_sep VARCHAR2(90) := RPAD('=', 90, '=');
-    v_lin VARCHAR2(90) := RPAD('─', 90, '─');
+    v_lin VARCHAR2(90) := RPAD('-', 90, '-');
     v_via_desc VARCHAR2(30);
     v_situacao VARCHAR2(20);
 
@@ -525,7 +525,7 @@ END;
 
 DECLARE
     v_sep VARCHAR2(90) := RPAD('=', 90, '=');
-    v_lin VARCHAR2(90) := RPAD('─', 90, '─');
+    v_lin VARCHAR2(90) := RPAD('-', 90, '-');
     v_status_desc VARCHAR2(25);
     v_canal_desc VARCHAR2(20);
     v_tempo_resp VARCHAR2(20);
