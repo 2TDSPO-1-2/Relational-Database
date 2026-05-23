@@ -1,10 +1,10 @@
-# 🐾 ARKIVE — Banco de Dados Relacional
+# ARKIVE — Banco de Dados Relacional
 
 > **Plataforma de saúde e bem-estar animal** — prontuário eletrônico, controle preventivo e alertas inteligentes para tutores, veterinários e clínicas parceiras.
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 **ARKIVE** é um serviço de gerenciamento que oferece a simplificação dos procedimentos burocráticos clínico-veterinários, permitindo o acesso de veterinários, tutores e profissionais cuidadores responsáveis pelos pacientes animais.
 O sistema tem como base o registro do histórico dos pacientes, trazendo as informações inseridas para o app no pré-preenchimento de formulários, facilitando o trabalho veterinário.
@@ -26,7 +26,7 @@ Turma: `2TDSPO` · FIAP - Unidade Paulista · 2026
 
 ---
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 ARKIVE/
@@ -46,7 +46,7 @@ ARKIVE/
 
 ---
 
-## 🗄️ Visão Geral do Banco de Dados
+## Visão Geral do Banco de Dados
 
 ### Tecnologia
 
@@ -71,7 +71,7 @@ ARKIVE/
 
 ---
 
-## 🏗️ Agrupamentos Funcionais
+## Agrupamentos Funcionais
 
 ```
 ┌─────────────────────────────────────┐
@@ -116,7 +116,7 @@ ARKIVE/
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 
@@ -139,7 +139,7 @@ Execute os scripts **nesta ordem**:
 @ARKIVE_tests_DQL_v1.sql
 ```
 
-> ⚠️ **IMPORTANTE:**
+> **IMPORTANTE:**
 > O script DDL remove automaticamente todos os objetos TB_ARKIVE_* utilizando CASCADE CONSTRAINTS PURGE antes da recriação da estrutura. Não execute em ambientes produtivos.
 
 ### Configurações de Sessão
@@ -154,7 +154,7 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
 
 ---
 
-## 📦 Detalhamento dos Scripts
+## Detalhamento dos Scripts
 
 ### `ARKIVE_boot-setup_DDL_v3.sql`
 
@@ -187,7 +187,7 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
 
 ---
 
-## 🔑 Convenções de Nomenclatura
+## Convenções de Nomenclatura
 
 | Prefixo | Tipo de Objeto |
 |:--------|:--------------|
@@ -208,7 +208,7 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
 
 ---
 
-## 📄 Licença
+## Licença
 
 Projeto acadêmico desenvolvido para fins educacionais. Todos os dados são fictícios.
 Este projeto foi desenvolvido com o apoio do assistente de IA Claude (`https://claude.ai/`)
