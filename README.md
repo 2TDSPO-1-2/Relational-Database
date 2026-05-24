@@ -207,12 +207,3 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
 | `NM_*` | Nome de entidade (VARCHAR2) |
 
 ---
-
-## Licença
-
-Projeto acadêmico desenvolvido para fins educacionais. Todos os dados são fictícios.
-Este projeto foi desenvolvido com o apoio do assistente de IA Claude (`https://claude.ai/`)
-
----
-
-*Gerado em maio de 2026 · FIAP 2TDSPO*
