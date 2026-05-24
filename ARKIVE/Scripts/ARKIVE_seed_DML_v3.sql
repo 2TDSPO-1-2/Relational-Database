@@ -220,8 +220,12 @@ BEGIN
     INSERT INTO TB_ARKIVE_VETERINARIO (
         NM_VETERINARIO, DC_CRMV, DS_ESPECIALIDADE, DS_EMAIL, ID_CLINICA, ST_ATIVO
     ) VALUES (
-        p_nm_veterinario, p_dc_crmv, p_ds_especialidade,
-        p_ds_email, p_id_clinica, NVL(p_st_ativo, 'S')
+        REGEXP_REPLACE(TRIM(p_nm_veterinario),'^[[:space:]]*Dr(a)?[.]?[[:space:]]+', '', 1, 0,'i'),
+    	p_dc_crmv,
+    	p_ds_especialidade,
+    	p_ds_email,
+    	p_id_clinica,
+    	NVL(p_st_ativo, 'S')
     );
 EXCEPTION
     WHEN DUP_VAL_ON_INDEX THEN
@@ -761,7 +765,7 @@ EXCEPTION
             'Feedback NPS duplicado: ' || SQLERRM);
     WHEN e_check_violado THEN
         PR_ARKIVE_REG_ERRO(c_nm_proc, SQLCODE,
-            'Violação de CHECK [NR_NOTA 0-10 / contexto obrigatório]: ' || SQLERRM);
+            'Violação de CHECK [NR_NOTA 0-5 / contexto obrigatório]: ' || SQLERRM);
     WHEN OTHERS THEN
         PR_ARKIVE_REG_ERRO(c_nm_proc, SQLCODE, SQLERRM);
 END PR_ARKIVE_INS_FEEDBACK_NPS;
@@ -849,16 +853,16 @@ END;
 /
   -- ## 3.06 — TB_ARKIVE_VETERINARIO
 BEGIN
-    PR_ARKIVE_INS_VETERINARIO('Dra. Mariana Andrade', '12345-SP','Clínica Geral', 'mariana.andrade@vet.com', 1, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dr. Rafael Brito', '23456-RJ','Dermatologia', 'rafael.brito@vet.com', 2, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dra. Carolina Mendes', '34567-MG','Ortopedia', 'carolina.mendes@vet.com', 3, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dr. Thiago Lima', '45678-PR','Cardiologia', 'thiago.lima@vet.com', 4, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dra. Fernanda Castro', '56789-RS','Oftalmologia', 'fernanda.castro@vet.com', 5, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dr. Gustavo Nunes', '67890-BA','Neurologia', 'gustavo.nunes@vet.com', 6, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dra. Patrícia Faria', '78901-DF','Oncologia', 'patricia.faria@vet.com', 7, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dr. André Ribeiro', '89012-PE','Cirurgia', 'andre.ribeiro@vet.com', 8, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dra. Lívia Batista', '90123-AM','Endocrinologia', 'livia.batista@vet.com', 9, 'S');
-    PR_ARKIVE_INS_VETERINARIO('Dr. Bruno Almeida', '01234-CE','Clínica Geral', 'bruno.almeida@vet.com', NULL, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Mariana Andrade', '12345-SP','Clínica Geral', 'mariana.andrade@vet.com', 1, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Rafael Brito', '23456-RJ','Dermatologia', 'rafael.brito@vet.com', 2, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Carolina Mendes', '34567-MG','Ortopedia', 'carolina.mendes@vet.com', 3, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Thiago Lima', '45678-PR','Cardiologia', 'thiago.lima@vet.com', 4, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Fernanda Castro', '56789-RS','Oftalmologia', 'fernanda.castro@vet.com', 5, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Gustavo Nunes', '67890-BA','Neurologia', 'gustavo.nunes@vet.com', 6, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Patrícia Faria', '78901-DF','Oncologia', 'patricia.faria@vet.com', 7, 'S');
+    PR_ARKIVE_INS_VETERINARIO('André Ribeiro', '89012-PE','Cirurgia', 'andre.ribeiro@vet.com', 8, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Lívia Batista', '90123-AM','Endocrinologia', 'livia.batista@vet.com', 9, 'S');
+    PR_ARKIVE_INS_VETERINARIO('Bruno Almeida', '01234-CE','Clínica Geral', 'bruno.almeida@vet.com', NULL, 'S');
     COMMIT;
 END;
 /
@@ -1089,16 +1093,16 @@ END;
 /
   -- ## 3.22 — TB_ARKIVE_FEEDBACK_NPS
 BEGIN
-    PR_ARKIVE_INS_FEEDBACK_NPS(1, 1, 1, 1, 1, 10, 'Atendimento excelente, muito profissional!', TO_DATE('2025-01-16 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(2, 2, 2, 2, 2, 9, 'Boa orientação, mas demorou um pouco', TO_DATE('2025-02-22 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(NULL, 3, 3, 3, 3, 7, 'Medicação causou efeito colateral, não esperava', TO_DATE('2025-03-12 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(4, 4, 4, 4, 4, 10, 'Check-up rápido e eficiente', TO_DATE('2025-04-06 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(NULL, 5, 5, 5, 5, 5, 'A consulta remota não resolveu meu problema', TO_DATE('2025-05-23 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(6, 6, 6,  6, 6, 8, 'Bom atendimento, mas precisei voltar', TO_DATE('2025-06-20 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(NULL, 7, 7, 7, 7, 9, 'Colírio resolveu rapidamente', TO_DATE('2025-07-31 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(8, 8, 8, 8, 8, 6, 'Aguardei muito pelos resultados', TO_DATE('2025-08-15 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(9, 9, 9, 9, 9, 10,'O adestrador resolveu o problema comportamental', TO_DATE('2025-09-27 13:13', 'YYYY-MM-DD HH24:MI'));
-    PR_ARKIVE_INS_FEEDBACK_NPS(10, 10, 10, NULL, 10, 8, 'Tratamento da otite foi eficaz', TO_DATE('2025-10-05 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(1, 1, 1, 1, 1, 5, 'Atendimento excelente, muito profissional!', TO_DATE('2025-01-16 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(2, 2, 2, 2, 2, 5, 'Boa orientação, mas demorou um pouco', TO_DATE('2025-02-22 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(NULL, 3, 3, 3, 3, 4, 'Medicação causou efeito colateral, não esperava', TO_DATE('2025-03-12 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(4, 4, 4, 4, 4, 5, 'Check-up rápido e eficiente', TO_DATE('2025-04-06 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(NULL, 5, 5, 5, 5, 3, 'A consulta remota não resolveu meu problema', TO_DATE('2025-05-23 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(6, 6, 6, 6, 6, 4, 'Bom atendimento, mas precisei voltar', TO_DATE('2025-06-20 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(NULL, 7, 7, 7, 7, 5, 'Colírio resolveu rapidamente', TO_DATE('2025-07-31 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(8, 8, 8, 8, 8, 3, 'Aguardei muito pelos resultados', TO_DATE('2025-08-15 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(9, 9, 9, 9, 9, 5, 'O adestrador resolveu o problema comportamental', TO_DATE('2025-09-27 13:13', 'YYYY-MM-DD HH24:MI'));
+    PR_ARKIVE_INS_FEEDBACK_NPS(10, 10, 10, NULL, 10, 4, 'Tratamento da otite foi eficaz', TO_DATE('2025-10-05 13:13', 'YYYY-MM-DD HH24:MI'));
     COMMIT;
 END;
 /

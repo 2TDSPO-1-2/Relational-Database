@@ -12,7 +12,7 @@ O sistema tem como base o registro do histórico dos pacientes, trazendo as info
 O ARKIVE contempla a cobertura de animais domésticos (pets comuns e exóticos), animais de fazenda e animais de zoológico, reunindo em uma única plataforma o cuidado com toda a diversidade da fauna sob tutela humana. 
 
 ### Disciplina
-**Mastering Relational and Non-Relational Database**  
+**Mastering Relational and Non-Relational Database**
 Turma: `2TDSPO` · FIAP - Unidade Paulista · 2026
 
 ### Equipe
@@ -23,6 +23,18 @@ Turma: `2TDSPO` · FIAP - Unidade Paulista · 2026
 | RM561996 | Lucca de Araujo Gomes |
 | RM561671 | Rafaela Ferreira Santos |
 | RM566224 | Victor Sabelli Rocha Batista |
+
+---
+
+## Links do Projeto
+
+### Repositório
+
+> [GitHub — Relational Data Base](https://github.com/2TDSPO-1-2/Relational-Database.git)
+
+### Vídeo demonstrativo
+
+[YouTube — Projeto ArkIve (MRDB)](https://youtu.be/E7Wd3jElDBU)
 
 ---
 
@@ -207,3 +219,5 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
 | `NM_*` | Nome de entidade (VARCHAR2) |
 
 ---
+
+*Maio de 2026 · FIAP 2TDSPO*
